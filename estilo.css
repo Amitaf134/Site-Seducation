@@ -1,0 +1,63 @@
+:root{
+  --primary-color:#295CCB8C;
+  --secundary-color:#485cc7;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+/*cabeçalho*/
+header{
+  background-color: var(--primary-color) ;
+  display: flex;
+}
+ #logo{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+  }
+.brrPesq{
+  padding: 0;
+  position: relative;
+  background-color: red;
+  width: 650px;
+  height: 50px;
+  top: 60px;
+}
+
+.brrPesq #brPesq{
+ width: 600px;
+ height: 30px;
+ border-radius: 25px;
+ border: none;
+ margin-top: 0;
+}
+
+#btPesq{
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url('/img/pesquisar.svg');
+  background-size: cover;
+  border: none;
+}
+
+.botao{
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  background-color: var(--secundary-color);
+  color:white;
+}
+
+.botao a{
+  text-decoration: none;
+  color: white;
+}
+.bts{
+  position: relative;
+  margin-top: 5px;
+  right: 0;
+  background-color: yellow;
+}
