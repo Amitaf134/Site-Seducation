@@ -1,6 +1,7 @@
 :root {
   --primary-color: #295CCB8C;
   --secundary-color: #485cc7;
+
 }
 
 body {
@@ -47,13 +48,15 @@ header {
   margin-left: 5px;
 }
 
-/*
+
 .botao {
   width: 100px;
   border-radius: 10px;
   border: none;
   padding: 8px;
   background-color: var(--secundary-color);
+  font-family: 'Inter', sans-serif;
+  ;
   color: white;
 }
 
@@ -61,7 +64,7 @@ header {
   text-decoration: none;
   color: white;
 }
-*/
+
 .bts {
   height: 50px;
   position: absolute;
@@ -108,4 +111,7 @@ header {
 .conteiner h2 {
   margin-left: 30px;
   margin-top: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  ;
+  font-size: 2em;
 }
