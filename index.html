@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Seducation</title>
-   <link href="img/logos.png" rel="icon">
-   <link href="estilo.css" rel="stylesheet">
-   <script type="text/javascript" src="PagInicial.js"></script>
-   <meta charset="utf-8">
-  </head>
-  <body>
-    <header>
-      <img src="img/logos.png" width="150px" height="150px">
-<!--Barra de Pesquisa-->
-      <div class="brrPesq">
-        <input type="text" id="brPesq" placeholder="Pesquisar...">
-        <button id="btPesq" type="submit" onclick="barraPesq()"></button>
-      </div>
-<!-- botões de login e cadastro-->
-    <div class="bts">
-      <button class="botao" id="btLogin"><a href="login.html">Login</a></button>
-     <button class="botao" id="btCadastro"><a href="cadastro.html">Cadastrar</a></button>
+
+<head>
+  <title>Seducation</title>
+  <link href="img/logos.png" rel="icon">
+  <link href="css/estilo.css" rel="stylesheet">
+  <script type="text/javascript" src="js/PagInicial.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <header>
+    <img src="img/logos.png" width="150px" height="150px">
+    <!--Barra de Pesquisa-->
+    <div class="brrPesq">
+      <input type="text" id="brPesq" placeholder="Pesquisar...">
+      <button id="btPesq" type="submit" onclick="barraPesq()"></button>
     </div>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="blogs.html">Blogs</a></li>
-        <li><a href="contato.html">Contatos</a></li>
-        <li><a href="inform.html">Informações</a></li>
-        <li><a href="sobre.html">Sobre nós</a></li>
-      </ul>
-    </nav>
-  </body>
+    <!-- botões de login e cadastro-->
+
+    <dialog open id="dlogin">
+      <form method="dialog">
+        <h2>Login</h2>
+        <label>Email:</label>
+        <input type="email" id="email">
+        <button class="botao" id="cancel" type="reset">Cancel</button>
+        <button type="submit">Confirm</button>
+      </form>
+    </dialog>
+
+
+
+    <div class="bts">
+      <button class="botao" id="btLogin" type="submit">Login</button>
+      <button class="botao" id="btCadastro"><a href="cadastro.html">Cadastrar</a></button>
+    </div>
+
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="contato.html">Contatos</a></li>
+      <li><a href="inform.html">Informações</a></li>
+      <li><a href="sobre.html">Sobre nós</a></li>
+    </ul>
+  </nav>
+
+  <section class="conteiner">
+    <h2>Assuntos em Alta</h2>
+  </section>
+</body>
+
 </html>

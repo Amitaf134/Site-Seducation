@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #295CCB8C;
+  --secundary-color: #485cc7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*cabeçalho*/
+header {
+  background-color: var(--primary-color);
+  display: flex;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
+
+.brrPesq {
+  padding: 0;
+  position: relative;
+  width: auto;
+  height: 50px;
+  top: 50px;
+  left: 90px;
+}
+
+.brrPesq #brPesq {
+  width: 1300px;
+  height: 35px;
+  border-radius: 25px;
+  border: none;
+  margin-top: 5px;
+}
+
+#btPesq {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(img/lupa.png);
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  margin-left: 5px;
+}
+
+/*
+.botao {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  background-color: var(--secundary-color);
+  color: white;
+}
+
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+*/
+.bts {
+  height: 50px;
+  position: absolute;
+  margin-top: 10px;
+  right: 0;
+  margin-right: 10px;
+}
+
+.menu {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: space-around;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.menu ul li:hover {}
+
+.selecionado {
+  border-bottom: 3px solid var(--secundary-color);
+  padding: 5px;
+}
+
+/* seções*/
+.conteiner {
+  width: auto;
+  height: 500px;
+}
+
+.conteiner h2 {
+  margin-left: 30px;
+  margin-top: 20px;
+}
