@@ -98,8 +98,9 @@ header {
 .menu ul li:hover {}
 
 .selecionado {
-  border-bottom: 3px solid var(--secundary-color);
-  padding: 5px;
+  border-bottom: 3px solid #295CCB;
+  border-style: 58%;
+  padding: 5px
 }
 
 /* seções*/
@@ -129,6 +130,15 @@ dialog h2 {
   font-size: 2em;
 }
 
+dialog input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #0B2C4D;
+  width: 250px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
 .btSair {
   position: absolute;
   background-color: transparent;
@@ -137,8 +147,4 @@ dialog h2 {
   font-style: bold;
   right: 0;
   top: 0;
-}
-
-.telaLogin label {
-  display: inline;
 }
