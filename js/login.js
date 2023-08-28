@@ -1,15 +1,11 @@
-(function () {
-  var updateButton = document.getElementById("btLogin");
-  var cancelButton = document.getElementById("cancel");
-  var favDialog = document.getElementById("dlogin");
+function logar() {
 
-  // O botão Update abre uma Dialog
-  updateButton.addEventListener("click", function () {
-    favDialog.showModal();
-  });
 
-  // O botão cancelButtom fecha uma Dialog
-  cancelButton.addEventListener("click", function () {
-    favDialog.close();
-  });
-})();
+  var login = document.getElementById("login").showModal();
+
+}
+
+function sair() {
+  var btSair = document.getElementById("login").close();
+  console.log("oi");
+}
