@@ -59,7 +59,7 @@
    <dialog class="telaLogin" id="login"> 
      <button id="sair" type="button" onclick="sair()" class="btSair">X</button> 
      <h2>LOGIN</h2> 
-     <form method="dialog"> 
+     <form method="POST"> 
        <label for="email">Email</label> 
        <input type="email" id="email"> 
        <br> 
@@ -72,22 +72,24 @@
   
    <dialog class="telaCadastro" id="cadastro"> 
      <button id="sair" type="button" onclick="Csair()" class="btSair">X</button> 
+
      <h2>Cadastrar</h2> 
-     <form method="POST" action=""> 
+     <form method="post" action="verifica.php" id="usuario" target=""> 
        <label for="nomeUser">Usuário</label> 
-       <input type="text" id="nomeUser"> 
+       <input type="text" id="nomeUser" name="nomeUser"> 
        <br> 
        <label for="email">Email</label> 
-       <input type="email" id="email"> 
+       <input type="email" id="email" name="email"> 
        <br> 
        <label for="senha">Senha</label> 
-       <input type="password" id="senha"> 
+       <input type="password" id="senha" name="senha"> 
        <br> 
        <label for="confirm_senha">Confirmar</label> 
-       <input type="password" id="confirm_senha"> 
+       <input type="password" id="confirm_senha" name="confirmSenha"> 
        <br> 
-       <button id="btCdastrar" type="button" onclick="cadastrar()" class="botao">Cadastrar</button> 
+       <button id="btCdastrar" type="submit" onclick="cadastrarU()" class="botao">Cadastrar</button> 
      </form> 
+
    </dialog> 
   
    <footer> 

@@ -1,15 +1,16 @@
 <?php
-  $usuario = 'fat';
-  $senha = 'ami123';
-  $database = 'seducation';
-  $host ='localhost';
-  $port = '3310';
+  class db{
 
-  $mysqli = new mysqli($host, $usuario, $senha , $database, $port);
-
-  if($mysqli->error){
-    die("Falha ao conectar ao banco de dados".$mysqli->error);
-  }else{
-    echo("deu certo");
+  private $user = 'user';
+  private $password = 'user';
+  private $database = 'seducation';
+  private $host ='localhost';
+  private $port = '3310';
+  
+  function conecta_mysql(){
+  
+    $mysqli = new mysqli($this->host, $this->user, $this->password , $this->database, $this->port);
+    return $mysqli;
   }
+   }
 ?>
