@@ -1,5 +1,5 @@
 //barrade Pesquisa
-function barraPesq(){
+function barraPesq() {
   var texto = window.getFindById(brPesq).value;
   alert(texto);
 }
