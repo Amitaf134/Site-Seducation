@@ -49,6 +49,12 @@
   
    <section class="conteiner"> 
      <h2>Assuntos em Alta</h2> 
+
+     <img src="img/artigoum.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%"
+     style="border-radius: 15px" style="position: absolute; left: 10px;" style="cursor: pointer" />
+     
+     <img src="img/artigodois.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%"
+     style="border-radius: 15px" style="position: absolute; left: 10px;" />
    </section> 
   
    <section class="conteiner"> 
