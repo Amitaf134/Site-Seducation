@@ -1,7 +1,7 @@
 <html>
 
 <head>
-  <title> Sobre nós </title>
+  <title> Artigos </title>
   <link href="img/logos.png" rel="icon">
   <link href="css/estilo.css" rel="stylesheet">
 
@@ -11,9 +11,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap" rel="stylesheet">
 
   <!--JavaScript-->
-  <script type="text/javascript" src="js/PagInicial.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
-  <script type="text/javascript" src="js/cadastro.js"></script>
+  <script type="text/javascript" src="../js/PagInicial.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
+  <script type="text/javascript" src="../js/cadastro.js"></script>
   <meta charset="utf-8">
 </head>
 
@@ -38,14 +38,18 @@
   <nav class=" menu">
     <ul>
       <li><a href="index.php">Início</a></li>
-      <li><a href="artigo.php">Artigos</a></li>
+      <li class="selecionado"><a href="artigo.php">Artigos</a></li>
       <li><a href="inform.php">Informações</a></li>
-      <li class="selecionado"><a href="sobrenos.php">Sobre nós</a></li>
+      <li><a href="sobrenos.php">Sobre nós</a></li>
     </ul>
   </nav>
 
   <section class="conteiner">
-    <h2> Sobre nós </h2>
+    <h2> GRAVIDEZ NA ADOLESCÊNCIA </h2>
+  </section>
+
+  <section class="conteiner">
+    <h2> MÉTODOS CONTRACEPTIVOS </h2>
   </section>
 
   <!--Tela de login e cadastro-->
@@ -84,5 +88,6 @@
     </form>
 
   </dialog>
+</body>
 
 </html>

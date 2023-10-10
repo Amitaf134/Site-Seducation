@@ -1,6 +1,4 @@
 function cadastrar() {
-
-
   var cadastro = document.getElementById("cadastro").showModal();
 }
 

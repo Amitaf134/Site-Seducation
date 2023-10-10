@@ -1,8 +1,5 @@
-
 <?php
 require_once('conexao.php');
- 
-
   $usuario = $_POST['nomeUser'];
   $email = $_POST['email'];
   $senha = $_POST['senha'];
@@ -15,6 +12,4 @@ require_once('conexao.php');
    mysqli_query($link,$sql);
   
  echo("<a href='index.php' class='botao'>volte</a>")
-
-
 ?>

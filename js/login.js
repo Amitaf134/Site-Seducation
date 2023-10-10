@@ -1,8 +1,5 @@
 function logar() {
-
-
   var login = document.getElementById("login").showModal();
-
 }
 
 function sair() {
