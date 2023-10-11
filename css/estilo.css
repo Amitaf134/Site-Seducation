@@ -122,6 +122,14 @@ header {
   font-size: 2em;
 }
 
+.conteiner img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  position: absolute;
+  left: 10px;
+}
+
 .conteiner h3 {
   margin-left: 60px;
   font-family: monospace;
@@ -188,4 +196,10 @@ dialog button {
   position: fixed;
   right: 0;
   bottom: 60px;
+}
+
+.perfiheader img {
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 50%;
 }
