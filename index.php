@@ -41,9 +41,9 @@
    <nav class=" menu"> 
      <ul> 
        <li class="selecionado"><a href="index.html">Início</a></li> 
-       <li><a href="../html/artigo.html">Artigos</a></li> 
-       <li><a href="../html/inform.html">Informações</a></li> 
-       <li><a href="../html/sobre.html">Sobre nós</a></li> 
+       <li><a href="artigo.php">Artigos</a></li> 
+       <li><a href="inform.php">Informações</a></li> 
+       <li><a href="sobrenos.php">Sobre nós</a></li> 
      </ul> 
    </nav> 
   
