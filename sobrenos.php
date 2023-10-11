@@ -46,6 +46,7 @@
 
   <section class="conteiner">
     <h2> Sobre nós </h2>
+    <h3> Nós, mulheres brasileiras</h3>
   </section>
 
   <!--Tela de login e cadastro-->
