@@ -122,6 +122,12 @@ header {
   font-size: 2em;
 }
 
+.conteiner h3 {
+  margin-left: 60px;
+  font-family: monospace;
+  font-size: 2em;
+}
+
 dialog {
   position: absolute;
   background-color: #D1DFE1;
