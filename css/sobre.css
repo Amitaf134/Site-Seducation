@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #295CCB8C;
+    --secundary-color: #485cc7;
+  
+  }
+
+.conteinerS{
+
+    height: 400px;
+    width: 90%;
+    margin-top: 5px;
+    padding: 0;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.sobre{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sobre .caixa_sobre{
+    width: 300px;
+    height: 400px;
+    box-shadow:  0 0 10px 2px var(--primary-color);
+    margin-right: 25px;
+   margin-top: 10px;
+}
+
+.sobre .caixa_sobre img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.sobre .caixa_sobre h1{
+    width: 100%;
+    font-size: 20px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 10px 10px 20px;
+
+}
+
+.sobre .caixa_sobre p{
+    width: 90%;
+    font-size: 14px;
+    color: #3b3b3b;
+    margin: 0px;
+    text-align: justify;
+    margin-left: 15px;
+}
+
+.sobre .caixa_sobre input{
+    position: relative;
+    margin-top: 30px;
+    float: right;
+    margin-right: 10px;
+}
+
+.caixa_sobre:hover{
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
