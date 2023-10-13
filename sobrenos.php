@@ -19,30 +19,10 @@
 
 <body>
   <!--cabeçalho-->
-  <header>
-    <img src="img/logos.png" width="150px" height="150px">
+  <?php
+    include("cabecalho.php");
+  ?>
 
-    <!--Barra de Pesquisa-->
-    <div class="brrPesq">
-      <input type="text" id="brPesq" placeholder="Pesquisar...">
-      <button id="btPesq" type="submit" onclick="barraPesq()"></button>
-    </div>
-
-    <!-- botões de login e cadastro-->
-    <div class="bts">
-      <button class="botao" id="btLogin" type="button" onclick="logar()">Login</button>
-      <button class="botao" id="btCadastro" type="button" onclick="cadastrar()">Cadastrar</button>
-    </div>
-
-  </header>
-  <nav class=" menu">
-    <ul>
-      <li><a href="index.php">Início</a></li>
-      <li><a href="artigo.php">Artigos</a></li>
-      <li><a href="inform.php">Informações</a></li>
-      <li class="selecionado"><a href="sobrenos.php">Sobre nós</a></li>
-    </ul>
-  </nav>
 
   <section class="conteinerS">
     <h2> Sobre nós </h2>
@@ -74,40 +54,10 @@
     </div>
   </section>
 
-  <!--Tela de login e cadastro-->
-  <dialog class="telaLogin" id="login">
-    <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
-    <h2>LOGIN</h2>
-    <form method="POST">
-      <label for="email">Email</label>
-      <input type="email" id="email">
-      <br>
-      <label for="senha">Senha</label>
-      <input type="password" id="senha">
-      <br>
-      <button id="btLogar" type="button" onclick="sair()" class="botao">Logar</button>
-    </form>
-  </dialog>
-
-  <dialog class="telaCadastro" id="cadastro">
-    <button id="sair" type="button" onclick="Csair()" class="btSair">X</button>
-
-    <h2>Cadastrar</h2>
-    <form method="post" action="verifica.php" id="usuario" target="">
-      <label for="nomeUser">Usuário</label>
-      <input type="text" id="nomeUser" name="nomeUser">
-      <br>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
-      <br>
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha">
-      <br>
-      <label for="confirm_senha">Confirmar</label>
-      <input type="password" id="confirm_senha" name="confirmSenha">
-      <br>
-      <button id="btCdastrar" type="submit" onclick="cadastrarU()" class="botao">Cadastrar</button>
-    </form>
+  <!--login e cadastro-->
+  <?php
+ include('loginCad.php');
+ ?>
 
   </dialog>
 

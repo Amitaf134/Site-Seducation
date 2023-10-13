@@ -27,14 +27,17 @@ header {
   height: 50px;
   top: 50px;
   left: 90px;
+  
 }
 
 .brrPesq #brPesq {
+  visibility: hidden;
   width: 1300px;
   height: 35px;
   border-radius: 25px;
   border: none;
   margin-top: 5px;
+
 }
 
 #btPesq {
@@ -47,6 +50,7 @@ header {
   border: none;
   margin-left: 5px;
 }
+
 
 
 .botao {
@@ -200,10 +204,55 @@ dialog button {
   position: fixed;
   right: 0;
   bottom: 60px;
+  text-decoration: none;
+  color: black;
 }
 
 .perfiheader img {
   margin-top: 30px;
   margin-left: 30px;
   border-radius: 50%;
+}
+
+
+@media screen and (max-width:1400px) {
+  #logo{
+    width: 100px;
+    height: 100px;
+   
+  }
+
+  .brrPesq{
+    position: relative;
+    width: 750px;
+    height: 30px;
+    left: 250px;
+  }
+
+.brrPesq #brPesq{
+  width: 600px;
+  height: 30px;
+}
+.brrPesq #btPesq{
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+}
+
+@media  screen and (max-width:480px) {
+  
+header{
+  height: 100px;
+}
+  #logo{
+
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+  }
+
+  .bts{
+    visibility: hidden;
+  }
 }

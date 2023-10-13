@@ -4,5 +4,4 @@ function logar() {
 
 function sair() {
   var btSair = document.getElementById("login").close();
-  console.log("oi");
 }

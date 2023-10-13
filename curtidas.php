@@ -28,8 +28,8 @@
   </nav>
 
   <footer>
-    <!-- no ta fumcionadi sos sos sos atencao galera-->
-    <button id="btPublicar" class="btPubli" type="button" href="postagens.php"> + </button>
+    <!-- tá funcionando-->
+    <a href="postagens.php" class="btPubli" id="btPublicar">+</a></button>
   </footer>
 </body>
 

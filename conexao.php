@@ -5,7 +5,7 @@
   private $password = 'user';
   private $database = 'seducation';
   private $host ='localhost';
-  private $port = '3310';
+  private $port = '3306';
   
   function conecta_mysql(){
     $mysqli = new mysqli($this->host, $this->user, $this->password , $this->database, $this->port);

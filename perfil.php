@@ -20,7 +20,7 @@
 <body>
   <header class="perfiheader">
     <!-- pra botao pra editar la no coisa -->
-    <img src="img/perfil.png" width="150px" height="150px">
+    <a ><img src="img/perfil.png" width="150px" height="150px"></a>
   </header>
   <nav class="menu">
     <ul>
@@ -31,7 +31,7 @@
 
   <footer>
     <!-- no ta fumcionadi sos sos sos atencao galera-->
-    <button id="btPublicar" class="btPubli" type="button" href="postagens.php"> + </button>
+    <button id="btPublicar" class="btPubli" type="button" ><a href="postagens.php">+</a></button>
   </footer>
 </body>
 
