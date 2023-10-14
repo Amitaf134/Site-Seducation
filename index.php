@@ -52,7 +52,7 @@ include('conexao.php');
  ?>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
+    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php" >+</a></button>
   </footer>
 </body>
 
