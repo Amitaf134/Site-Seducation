@@ -29,27 +29,28 @@
   
     <div class="sobre">
       <div class="caixa_sobre">
-        <img src="img/artigoum.png" id="imgSobre">
+      <img src="img/darwin.png" id="imgSobre">
         <h1>Ana Clara</h1>
         <p>Olá, me chamo Ana Clara. Estou no 3°ano do ensino médio e gostaria de ser DBA.</p>
 
-        <input type="button" class="botao" value="Saber mais">
+        <input type="button" class="botao" value="Saber mais" onclick="location.href='sabermaisAna.php'">
       </div>
 
       <div class="caixa_sobre">
-        <img src="img/artigoum.png" id="imgSobre">
+      <img src="img/anais.png" id="imgSobre">
         <h1>Diemilly</h1>
         <p>Olá, me chamo Diemilly. Estou no 3°ano do ensino médio e gostaria de ser Designer.</p>
 
-        <input type="button" class="botao" value="Saber mais">
+        <input type="button" class="botao" value="Saber mais" onclick="location.href='sabermaisMilly.php'">
       </div>
 
       <div class="caixa_sobre">
-        <img src="img/artigoum.png" id="imgSobre">
+      <img src="img/gumball.png" id="imgSobre">
         <h1>Fatima</h1>
         <p>Olá, me chamo Fatima. Estou no 3°ano do ensino médio e gostaria de ser Herdeira.</p>
 
-        <input type="button" class="botao" value="Saber mais">
+        <input type="button" class="botao" value="Saber mais" onclick="location.href='sabermaisFat.php'">
+
       </div>
     </div>
   </section>

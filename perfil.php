@@ -24,8 +24,8 @@
     <img src="img/ondulacao.svg">
     <div class="imgPerfil">
     <a ><img src="img/perfil.png" width="150px" height="150px"></a>
-    <h3>Djmilly</h3>
-    <p>amo o flamengo</p>
+    <h3>Jmilly</h3>
+    <p>amo o flamengo (memtira)</p>
 </div>
   </header>
   <nav class="menu" id="menu">
@@ -36,8 +36,8 @@
   </nav>
 
   <footer>
-    <!-- no ta fumcionadi sos sos sos atencao galera-->
     <button id="btPublicar" class="btPubli" type="button" ><a href="postagens.php">+</a></button>
+    
   </footer>
 </body>
 
