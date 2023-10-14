@@ -96,16 +96,20 @@ header {
   padding-bottom: 0;
 }
 
-.menu ul li:hover {}
 
 .menu ul li a {
   text-decoration: none;
   color: black;
 
 }
+/*
+.menu ul li:hover {
+  border-bottom: 3px solid #295CCB;
+  border-style: 58%;
+  padding: 5px;
 
-.menu ul li:hover {}
-
+}
+*/
 .selecionado {
   border-bottom: 3px solid #295CCB;
   border-style: 58%;
@@ -126,7 +130,6 @@ header {
   margin-left: 40px;
   margin-top: 20px;
   font-family: 'Bebas Neue', sans-serif;
-
   font-size: 2em;
 }
 
@@ -204,14 +207,35 @@ dialog button {
   position: fixed;
   right: 0;
   bottom: 60px;
+
+}
+
+#btPublicar a{
   text-decoration: none;
   color: black;
 }
+.perfiheader{
 
-.perfiheader img {
+  background: url(../img/ondulacao.svg);
+ background-size: cover;
+  background-repeat: no-repeat;
+  background-color:var(--primary-color);
+  border-bottom: 1px solid #fff;
+ position: relative;
+}
+
+#menu{
+  background-color: #fff;
+}
+.imgPerfil{
+  position: absolute;
+  left: 100px;
+}
+.perfiheader .imgPerfil a img {
+  
   margin-top: 30px;
-  margin-left: 30px;
   border-radius: 50%;
+ 
 }
 
 

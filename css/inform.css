@@ -1,0 +1,35 @@
+
+h1{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+}
+.informacoes{
+    display:inline;
+    width: 80%;
+    margin: 0px,50px,10px,50px;
+    list-style: none;
+    
+}
+.informacoes .titulo{
+    width: auto;
+    border-top: 2px solid var(--secundary-color);
+    padding: 10px;
+    background-color: #f0ffff;
+
+}
+.informacoes h3{
+    font-family: 'Bebas Neue', sans-serif;
+   font-size: 1em;
+}
+
+.informacoes li{
+
+}
+.informacoes p{
+    margin-left: 50px;
+    font-family: 'Jaldi', sans-serif;
+    font-size: 1.5em;
+}
+#informHos{
+    display: none;
+}

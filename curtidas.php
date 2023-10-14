@@ -18,9 +18,15 @@
 <body>
   <header class="perfiheader">
     <!-- pra botao pra editar la no coisa -->
-    <img src="img/perfil.png" width="150px" height="150px">
+    <img src="img/ondulacao.svg">
+    <div class="imgPerfil">
+    <a ><img src="img/perfil.png" width="150px" height="150px"></a>
+    <h3>Djmilly</h3>
+    <p>amo o flamengo</p>
+</div>
   </header>
-  <nav class="menu">
+  
+  <nav class="menu" id="menu">
     <ul>
       <li><a href="perfil.php"> Postagens </a></li>
       <li class="selecionado"><a href="curtidas.php"> Curtidas </a></li>
@@ -29,7 +35,7 @@
 
   <footer>
     <!-- tá funcionando-->
-    <a href="postagens.php" class="btPubli" id="btPublicar">+</a></button>
+    <button id="btPublicar" class="btPubli" type="button" ><a href="postagens.php">+</a></button>
   </footer>
 </body>
 
