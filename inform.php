@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap" rel="stylesheet">
 
+  <script type="text/javascript" src="js/inform.js"></script>
 
   <meta charset="utf-8">
 </head>
@@ -26,9 +27,9 @@
     <h1>Contatos seguros</h1>
 
   <ul class="informacoes">
-    <li><h2 class="titulo"> Delegacias</h2>
+    <li onclick="mostrarInformsD()"><h2 class="titulo"> Delegacias</h2>
 
-    <dl class="informacoesDel">
+    <dl  id="informDel">
 
     <dt><h3> MANAUS </h3></dt>
     <dd>
@@ -114,7 +115,7 @@
 
 </li>
 
-<li id="informH"><h2 class="titulo" onclick="mostrarInform()">HOPITAIS/UBS </h2>
+<li id="informH" onclick="mostrarInformsH()"><h2 class="titulo">HOPITAIS/UBS </h2>
 <dl  id="informHos">
 <dt><h3> MANAUS </h3></dt>
 <dd>
