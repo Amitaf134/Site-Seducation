@@ -23,13 +23,14 @@ include('conexao.php');
 
 <body>
   <?php
-    include("cabecalho.php");
+  include("cabecalho.php");
   ?>
 
   <section class="conteiner">
     <h2>Assuntos em Alta</h2>
     <!--duvidei ajeitarem isso aq hein hein hein duvidei -->
     <!--pois vai continuar duvidando :p -->
+    <!-- filha da puta te odeio nossa smt por isso a gnt nao deu certo -->
     <img src="img/artigoum.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 0px 18px;" style="position: absolute; left: 10px;" style="cursor: pointer" />
 
     <img src="img/artigodois.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px" style="position: absolute; left: 10px;" />
@@ -49,11 +50,11 @@ include('conexao.php');
   </section>
   <!--login e cadastro-->
   <?php
- include('loginCad.php');
- ?>
+  include('loginCad.php');
+  ?>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php" >+</a></button>
+    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
   </footer>
 </body>
 
