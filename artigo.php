@@ -20,9 +20,8 @@
 <body>
   <!--cabeçalho-->
   <?php
-    include("cabecalho.php");
+  include("cabecalho.php");
   ?>
-
 
   <section class="conteiner">
     <h2> GRAVIDEZ NA ADOLESCÊNCIA </h2>
@@ -32,10 +31,10 @@
     <h2> MÉTODOS CONTRACEPTIVOS </h2>
   </section>
 
- <!--login e cadastro-->
- <?php
- include('loginCad.php');
- ?>
+  <!--login e cadastro-->
+  <?php
+  include('loginCad.php');
+  ?>
 </body>
 
 </html>

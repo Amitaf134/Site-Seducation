@@ -20,12 +20,12 @@
     <!-- pra botao pra editar la no coisa -->
     <img src="img/ondulacao.svg">
     <div class="imgPerfil">
-    <a ><img src="img/perfil.png" width="150px" height="150px"></a>
-    <h3>Djmilly</h3>
-    <p>amo o flamengo</p>
-</div>
+      <a><img src="img/perfil.png" width="150px" height="150px"></a>
+      <h3>Djmilly</h3>
+      <p>sou uma fa de vivi</p>
+    </div>
   </header>
-  
+
   <nav class="menu" id="menu">
     <ul>
       <li><a href="perfil.php"> Postagens </a></li>
@@ -35,7 +35,7 @@
 
   <footer>
     <!-- tá funcionando-->
-    <button id="btPublicar" class="btPubli" type="button" ><a href="postagens.php">+</a></button>
+    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
   </footer>
 </body>
 
