@@ -37,7 +37,7 @@
       </div>
 
       <div class="caixa_sobre">
-      <img src="img/anais.png" id="imgSobre">
+      <img src="img/jmilly.jpg" id="imgSobre">
         <h1>Diemilly</h1>
         <p>Olá, me chamo Diemilly. Estou no 3°ano do ensino médio e gostaria de ser Designer.</p>
 
