@@ -31,17 +31,17 @@ include('conexao.php');
     <!--duvidei ajeitarem isso aq hein hein hein duvidei -->
     <!--pois vai continuar duvidando :p -->
     <!-- filha da puta te odeio nossa smt por isso a gnt nao deu certo -->
-    <img src="img/artigoum.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 0px 18px;" style="position: absolute; left: 10px;" style="cursor: pointer" />
+    <img src="img/artigoum.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 20px;" />
 
-    <img src="img/artigodois.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px" style="position: absolute; left: 10px;" />
+    <img src="img/artigodois.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 340px;" />
 
-    <img src="img/artigotres.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 0px 18px;" style="position: absolute; left: 10px;" />
+    <img src="img/artigotres.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 662px;" />
 
-    <img src="img/artigoquatro.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 100px 18px;" style="position: absolute; left: 10px;" />
+    <!-- img src="img/artigoquatro.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 980px;" />
 
-    <img src="img/artigocinco.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 100px 18px;" style="position: absolute; left: 10px;" />
+    <img src="img/artigocinco.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 980px;" -->
 
-    <img src="img/artigoseis.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin: 100px 18px;" style="position: absolute; left: 10px;" />
+    <img src="img/artigoseis.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" style="border-radius: 15px; margin-left: 980px;" />
 
   </section>
 

@@ -21,10 +21,12 @@
   <header class="perfiheader">
 
     <!-- pra botao pra editar la no coisa -->
-    <img src="img/ondulacao.svg">
+    <!-- ata, agora traduz -->
+    <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" width="30px" height="30px" onclick="window.location.href='index.php'">
+    <img src="img/ondulacao.svg" >
     <div class="imgPerfil">
     <a ><img src="img/perfil.png" width="150px" height="150px"></a>
-    <h3>Jmilly</h3>
+    <h3> Jmilly </h3>
     <p>amo o flamengo (memtira)</p>
 </div>
   </header>

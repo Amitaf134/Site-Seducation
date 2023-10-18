@@ -18,11 +18,12 @@
 <body>
   <header class="perfiheader">
     <!-- pra botao pra editar la no coisa -->
+    <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" onclick="window.location.href='index.php'">
     <img src="img/ondulacao.svg">
     <div class="imgPerfil">
       <a><img src="img/perfil.png" width="150px" height="150px"></a>
-      <h3>Djmilly</h3>
-      <p>sou uma fa de vivi</p>
+      <h3> Jmilly </h3>
+      <p>NAO sou uma fa de vivi</p>
     </div>
   </header>
 
