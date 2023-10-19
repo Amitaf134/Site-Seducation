@@ -1,14 +1,7 @@
 <?php
-  class db{
+$user = "root";
+$password = "";
+$database = "seducation";
+$host = "127.0.0.1:3310";
 
-  private $user = 'root';
-  private $password = 'root';
-  private $database = 'seducation';
-  private $host ='localhost';
-  private $port = '3306';
-  
-  function conecta_mysql(){
-    $mysqli = new mysqli($this->host, $this->user, $this->password , $this->database, $this->port);
-    return $mysqli;
-  }
-   }
+$conexao = mysqli_connect($host, $user, $password, $database);

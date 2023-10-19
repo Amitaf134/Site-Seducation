@@ -1,5 +1,4 @@
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -18,9 +17,10 @@
   <script type="text/javascript" src="js/cadastro.js"></script>
   <meta charset="utf-8">
 </head>
+
 <body>
- <!--Tela de login e cadastro-->
- <dialog class="telaLogin" id="login">
+  <!--Tela de login e cadastro-->
+  <dialog class="telaLogin" id="login">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
     <h2>LOGIN</h2>
     <form method="POST">
@@ -38,7 +38,7 @@
     <button id="sair" type="button" onclick="Csair()" class="btSair">X</button>
 
     <h2>Cadastrar</h2>
-    <form method="post" action="verifica.php" id="usuario" target="">
+    <form method="post" action="verificaUsuario.php" id="usuario" target="">
       <label for="nomeUser">Usuário</label>
       <input type="text" id="nomeUser" name="nomeUser">
       <br>
@@ -56,4 +56,5 @@
 
   </dialog>
 </body>
+
 </html>
