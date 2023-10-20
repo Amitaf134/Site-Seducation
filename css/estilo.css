@@ -27,7 +27,7 @@ header {
   height: 50px;
   top: 50px;
   left: 90px;
-  
+
 }
 
 .brrPesq #brPesq {
@@ -51,9 +51,7 @@ header {
   margin-left: 5px;
 }
 
-
-
-.botao {
+.inputSubmit {
   width: 100px;
   border-radius: 10px;
   border: none;
@@ -63,12 +61,12 @@ header {
   color: white;
 }
 
-.botao a {
+.inputSubmit a {
   text-decoration: none;
   color: white;
 }
 
-.botao:hover {
+.inputSubmit:hover {
   opacity: 80%;
 }
 
@@ -102,6 +100,7 @@ header {
   color: black;
 
 }
+
 /*
 .menu ul li:hover {
   border-bottom: 3px solid #295CCB;
@@ -210,96 +209,101 @@ dialog button {
 
 }
 
-#btPublicar a{
+#btPublicar a {
   text-decoration: none;
   color: black;
 }
-.perfiheader{
+
+.perfiheader {
 
   background: url(../img/ondulacao.svg);
- background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-bottom: 1px solid #fff;
- position: relative;
+  position: relative;
 }
 
-#menu{
+#menu {
   background-color: #fff;
 }
-.imgPerfil{
+
+.imgPerfil {
   position: absolute;
   left: 95px;
 }
+
 .perfiheader .imgPerfil a img {
-  
+
   margin-top: 30px;
   border-radius: 50%;
- 
+
 }
 
 
 @media screen and (max-width:1400px) {
-  #logo{
+  #logo {
     width: 100px;
     height: 100px;
-   
+
   }
 
-  .brrPesq{
+  .brrPesq {
     position: relative;
     width: 750px;
     height: 30px;
     left: 250px;
   }
 
-.brrPesq #brPesq{
-  width: 600px;
-  height: 30px;
-}
-.brrPesq #btPesq{
-  width: 30px;
-  height: 30px;
-  margin-top: 5px;
-}
+  .brrPesq #brPesq {
+    width: 600px;
+    height: 30px;
+  }
+
+  .brrPesq #btPesq {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+  }
 }
 
-@media  screen and (max-width:480px) {
-  
-header{
-  height: 100px;
-}
-  #logo{
+@media screen and (max-width:480px) {
+
+  header {
+    height: 100px;
+  }
+
+  #logo {
 
     width: 60px;
     height: 60px;
     justify-content: center;
   }
 
-  .bts{
+  .bts {
     visibility: hidden;
   }
 }
 
-  .my-carousel {
-    display: flex;
-    overflow: hidden;
-  }
+.my-carousel {
+  display: flex;
+  overflow: hidden;
+}
 
-  .my-carousel div {
-    flex: 1;
-  }
+.my-carousel div {
+  flex: 1;
+}
 
-  .my-carousel img {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0.5rem;
-    padding: 0 0.5rem;
-    border-radius: 0.5rem;
-    opacity: 0.8;
-    transition: 0.2s;
-  }
+.my-carousel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  transition: 0.2s;
+}
 
-  .my-carousel img:hover {
-    opacity: 1;
-  }
+.my-carousel img:hover {
+  opacity: 1;
+}

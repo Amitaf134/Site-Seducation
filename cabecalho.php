@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<header>
+  <header>
     <!--duvidei fzr essa logo abrir tela hein hein hein duvidei-->
     <a href="perfil.php"><img src="img/logos.png" id="logo"></a>
 
@@ -35,8 +35,8 @@
 
     <!-- botões de login e cadastro-->
     <div class="bts">
-      <button class="botao" id="btLogin" type="button" onclick="logar()">Login</button>
-      <button class="botao" id="btCadastro" type="button" onclick="cadastrar()">Cadastrar</button>
+      <button class="inputSubmit" id="btLogin" type="button" onclick="logar()">Login</button>
+      <button class="inputSubmit" id="btCadastro" type="button" onclick="cadastrar()">Cadastrar</button>
     </div>
 
   </header>
@@ -49,4 +49,5 @@
     </ul>
   </nav>
 </body>
+
 </html>

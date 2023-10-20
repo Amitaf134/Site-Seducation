@@ -1,7 +1,13 @@
 <?php
+$host = "localhost";
 $user = "root";
-$password = "";
+$password = "root";
 $database = "seducation";
-$host = "127.0.0.1:3310";
 
-$conexao = mysqli_connect($host, $user, $password, $database);
+$conecta = new mysqli($host, $user, $password, $database);
+if ($conecta->connect_errno) {
+  echo "Erro";
+} else
+  echo "Conexão efetuada com sucesso";
+  
+//precisa aparecer a mensagem de sucesso, é só rodar essa pagina a parte
