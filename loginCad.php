@@ -24,13 +24,16 @@
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
     <h2>LOGIN</h2>
     <form method="POST">
-      <label for="email">Email</label>
-      <input type="email" id="email">
+
+      <label for="email" style= "position: absolute; left: 20px; top: 145px;" >Email</label>
+      <input type="email" id="email" style= "position: absolute; left: 110px; top: 160px;">
       <br>
-      <label for="senha">Senha</label>
-      <input type="password" id="senha">
+      <label for="senha" style= "position: absolute; left: 20px; top: 210px;" >Senha</label>
+      <input type="password" id="senha" style= "position: absolute; left: 110px; top: 230px;">
       <br>
-      <button id="btLogar" type="button" onclick="sair()" class="botao">Logar</button>
+      <button id="btLogar" type="button" onclick="sair()" class="botao"
+      style= "position: absolute; left: 164px; top: 300px;">Logar</button>
+
     </form>
   </dialog>
 
@@ -51,7 +54,8 @@
       <label for="confirm_senha">Confirmar</label>
       <input type="password" id="confirm_senha" name="confirmSenha">
       <br>
-      <button id="btCdastrar" type="submit" onclick="cadastrarU()" class="botao">Cadastrar</button>
+      <button id="btCdastrar" type="submit" onclick="cadastrarU()" class="botao"
+      style= "position: absolute; left: 164px; top: 350px;" >Cadastrar</button>
     </form>
 
   </dialog>

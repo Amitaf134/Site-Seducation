@@ -25,6 +25,19 @@
 
   <section class="conteiner">
     <h2> GRAVIDEZ NA ADOLESCÊNCIA </h2>
+
+    <img src="img/artigosete.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" 
+    style="border-radius: 15px; margin-left: 20px;" />
+
+    <img src="img/artigooito.png" alt="Artigo 2" id="img-um" width="340px" height="320px" border-radius="55%" 
+    style="border-radius: 15px; margin-left: 340px;" />
+
+    <img src="img/artigonove.png" alt="Artigo 3" id="img-um" width="340px" height="320px" border-radius="55%" 
+    style="border-radius: 15px; margin-left: 662px;" />
+
+    <img src="img/artigodez.png" alt="Artigo 4" id="img-um" width="340px" height="320px" border-radius="55%" 
+    style="border-radius: 15px; margin-left: 980px;" />
+
   </section>
 
   <section class="conteiner">

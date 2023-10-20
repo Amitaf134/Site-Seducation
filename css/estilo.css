@@ -280,3 +280,26 @@ header{
     visibility: hidden;
   }
 }
+
+  .my-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+
+  .my-carousel div {
+    flex: 1;
+  }
+
+  .my-carousel img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 0.8;
+    transition: 0.2s;
+  }
+
+  .my-carousel img:hover {
+    opacity: 1;
+  }
