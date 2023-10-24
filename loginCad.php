@@ -53,7 +53,7 @@
       <label for="confirm_senha">Confirmar</label>
       <input type="password" id="confirm_senha" name="confirmSenha">
       <br>
-      <input id="cadastrar" name="cadastrar" method="post" type="submit" onclick="cadastrarU()" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
+      <input id="cadastrar" name="cadastrar"  type="submit" onclick="cadastrarU()" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
     </form>
   </dialog>
 </body>
