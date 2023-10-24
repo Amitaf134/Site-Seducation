@@ -4,7 +4,7 @@
   $bancoDados = new db();
   $link = $bancoDados-> conecta_mysql();
 
-  
+
   if (isset($_POST['cadastrar'])) {
   //aq ele ta verificando se os dados foram enviados, so q o problema é q nao estao mas ele nao da erro nenhum e o tabela ta vazia
     $usuario = $_POST['nomeUser'];
@@ -19,5 +19,4 @@
       echo "Erro" . mysqli_connect_errno();
     }
 }
-
 ?>
