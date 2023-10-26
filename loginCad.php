@@ -23,15 +23,15 @@
   <dialog class="telaLogin" id="login">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
     <h2>LOGIN</h2>
-    <form method="POST">
+    <form method="POST" action="verificaUsuario.php">
 
       <label for="email" style="position: absolute; left: 20px; top: 145px;">Email</label>
-      <input type="email" id="email" style="position: absolute; left: 110px; top: 160px;">
+      <input type="email" id="lemail" style="position: absolute; left: 110px; top: 160px;">
       <br>
       <label for="senha" style="position: absolute; left: 20px; top: 210px;">Senha</label>
-      <input type="password" id="senha" style="position: absolute; left: 110px; top: 230px;">
+      <input type="password" id="lenha" style="position: absolute; left: 110px; top: 230px;">
       <br>
-      <input id="logar" type="submit" class="inputSubmit" value="Logar" style="position: absolute; left: 164px; top: 300px;">
+      <input id="logar" name="logar" type="submit" class="inputSubmit" value="Logar" style="position: absolute; left: 164px; top: 300px;">
 
     </form>
   </dialog>
@@ -53,7 +53,7 @@
       <label for="confirm_senha">Confirmar</label>
       <input type="password" id="confirm_senha" name="confirmSenha">
       <br>
-      <input id="cadastrar" name="cadastrar"  type="submit" onclick="cadastrarU()" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
+      <input id="cadastrar" name="cadastrar"  type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
     </form>
   </dialog>
 </body>

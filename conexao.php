@@ -1,10 +1,10 @@
 <?php
 class db{
  private $host = "localhost";
- private $user = "user";
- private $password = "user";
+ private $user = "root";
+ private $password = "";
 private $database = "seducation";
-private $port = 3306;
+private $port = 3310;
 
 function conecta_mysql(){
 
