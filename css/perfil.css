@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #295CCB8C;
+    --secundary-color: #485cc7;
+}
+
+/*cabeçalho*/
+header {
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+#menu {
+  background-color: #fff;
+}
+
+.perfiheader {
+
+    background: url(../img/ondulacao.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.imgPerfil {
+    position: absolute;
+    left: 95px;
+    margin-top: 50px;
+
+}
+
+.perfiheader .imgPerfil a img {
+
+  margin-top: 30px;
+  border-radius: 50%;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: space-around;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu ul li {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.selecionado {
+  border-bottom: 3px solid #295CCB;
+  border-style: 58%;
+  padding: 5px
+}
+
+/*footer*/
+#btPublicar {
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    font-size: 3em;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 50px;
+    position: fixed;
+    right: 0;
+    bottom: 60px;
+  
+}
+
+#btPublicar a {
+    text-decoration: none;
+    color: black;
+}
+
+.btSair {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-style: bold;
+    right: 0;
+    top: 0;
+}
+
+/* pop-up */
+dialog {
+    position: absolute;
+    background-color: #D1DFE1;
+    border: none;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+dialog h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2em;
+}
+  
+dialog input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #0B2C4D;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+dialog #editarPerfilFoto{
+    width:"75%" 
+}
+  
+/* butao salvarr*/
+.inputSubmit {
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    padding: 8px;
+    background-color: var(--secundary-color);
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+  
+.inputSubmit a {
+    text-decoration: none;
+    color: white;
+}
+
+.inputSubmit:hover {
+    opacity: 80%;
+}
+
+/* seções*/
+.conteiner {
+  width: auto;
+  height: 400px;
+  width: 90%;
+  margin-top: 5px;
+  padding: 0;
+  margin-left: 50px;
+}
+
+.conteiner h2 {
+  margin-left: 40px;
+  margin-top: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+}
+
+.conteiner img {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  position: absolute;
+  left: 10px;
+}
+
+.conteiner h3 {
+  margin-left: 60px;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+/* nome&linha alinhados*/
+dialog label {
+  float: left;
+  width: 100px;
+  text-align: left;
+  margin-left: 100px;
+}
+
+/*bot sair(?)*/
+dialog button {
+  margin-top: 10px;
+}
+
+  
