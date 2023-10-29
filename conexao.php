@@ -8,12 +8,8 @@ private $port = 3306;
 
 function conecta_mysql(){
 
-      $conecta = new mysqli($this->host, $this->user, $this->password , $this->database, $this->port);
-        if ($conecta->connect_errno) {
-           echo "Erro";
-        } else{
+      $conecta = new  PDO('mysql:host=localhost;dbname=seducation;port=3306;charset=utf8',$this ->user,$this ->password); 
           return $conecta;
-        }
       }
     }
 ?>
