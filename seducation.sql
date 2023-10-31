@@ -24,5 +24,7 @@ CREATE TABLE usuario (
   nome text NOT NULL,
   email text NOT NULL unique,
   senha varchar(10) NOT NULL,
-  foto blob
+  foto blob,
+  tipo VARCHAR(10),
+  caminho TEXT
 )
