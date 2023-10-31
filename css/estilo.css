@@ -37,7 +37,6 @@ header {
   border-radius: 25px;
   border: none;
   margin-top: 5px;
-
 }
 
 #btPesq {
@@ -239,6 +238,34 @@ dialog button {
   border-radius: 50%;
 
 }
+.my-carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.my-carousel div {
+  flex: 1;
+}
+
+.my-carousel img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.my-carousel img:hover {
+  opacity: 1;
+}
+
+.my-prev{
+  background-color: #295CCB;
+}
+
+/*RESPONSIVIDADE*/
 
 
 @media screen and (max-width:1400px) {
@@ -271,39 +298,31 @@ dialog button {
 
   header {
     height: 100px;
+    position: absolute;
   }
 
   #logo {
-
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     justify-content: center;
   }
 
-  .bts {
-    visibility: hidden;
+  .brrPesq {
+    position: relative;
+    width: 750px;
+    height: 30px;
+    left: 250px;
+  }
+
+  .brrPesq #brPesq {
+    width: 600px;
+    height: 30px;
+  }
+
+  .brrPesq #btPesq {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
   }
 }
 
-.my-carousel {
-  display: flex;
-  overflow: hidden;
-}
-
-.my-carousel div {
-  flex: 1;
-}
-
-.my-carousel img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 0.5rem;
-  padding: 0 0.5rem;
-  border-radius: 0.5rem;
-  opacity: 0.8;
-  transition: 0.2s;
-}
-
-.my-carousel img:hover {
-  opacity: 1;
-}

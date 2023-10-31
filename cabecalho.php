@@ -24,7 +24,6 @@
 
 <body>
   <header>
-    <!--duvidei fzr essa logo abrir tela hein hein hein duvidei-->
     <a href="perfil.php"><img src="img/logos.png" id="logo"></a>
 
     <!--Barra de Pesquisa-->

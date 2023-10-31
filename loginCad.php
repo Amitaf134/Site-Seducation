@@ -23,13 +23,13 @@
   <dialog class="telaLogin" id="login">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
     <h2>LOGIN</h2>
-    <form method="POST" action="verificaUsuario.php">
+    <form method="post" action="verificaUsuario.php" id="usuario">
 
       <label for="email" style="position: absolute; left: 20px; top: 145px;">Email</label>
-      <input type="email" id="lemail" style="position: absolute; left: 110px; top: 160px;">
+      <input type="email" id="lemail" name="lemail" style="position: absolute; left: 110px; top: 160px;">
       <br>
       <label for="senha" style="position: absolute; left: 20px; top: 210px;">Senha</label>
-      <input type="password" id="lenha" style="position: absolute; left: 110px; top: 230px;">
+      <input type="password" id="lenha" name="lenha" style="position: absolute; left: 110px; top: 230px;">
       <br>
       <input id="logar" name="logar" type="submit" class="inputSubmit" value="Logar" style="position: absolute; left: 164px; top: 300px;">
 
@@ -40,7 +40,7 @@
     <button id="sair" type="button" onclick="Csair()" class="btSair">X</button>
 
     <h2>Cadastrar</h2>
-    <form method="post" action="verificaUsuario.php" id="usuario" target="">
+    <form method="post" action="verificaUsuario.php" id="usuario" target="" enctype="multipart/form-data">
       <label for="nomeUser">Usuário</label>
       <input type="text" id="nomeUser" name="nomeUser">
       <br>
@@ -53,6 +53,9 @@
       <label for="confirm_senha">Confirmar</label>
       <input type="password" id="confirm_senha" name="confirmSenha">
       <br>
+      <label for="foto">Foto</label>
+      <input type="file" name="pic" accept="image/*" >
+        <br>
       <input id="cadastrar" name="cadastrar"  type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
     </form>
   </dialog>

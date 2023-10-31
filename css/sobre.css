@@ -5,8 +5,7 @@
 }
 
 .conteinerS {
-
-    height: 400px;
+    height: 600px;
     width: 90%;
     margin-top: 5px;
     padding: 0;
@@ -25,7 +24,7 @@
 .sobre .caixa_sobre {
     width: 300px;
     height: 400px;
-    box-shadow: 0 0 10px 2px var(--primary-color);
+    box-shadow: 0 0 0px 0px var(--primary-color);
     margin-right: 25px;
     margin-top: 10px;
     margin: 30px;
@@ -68,3 +67,17 @@
     -webkit-transform: scale(0.5);
     transform: scale(1.5);
 }*/
+
+
+/*RESPONSIVIDADE*/
+@media screen and(max-width:480px){
+    .conteinerS{
+        width: 90%;
+    }
+
+.sobre{
+    width: 100%;
+    display: flex;
+}
+}
+
