@@ -50,6 +50,11 @@ session_start();
       <li><a href="sobrenos.php">Sobre nós</a></li>
     </ul>
   </nav>
+
+  <footer>
+    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
+  </footer>
+
 </body>
 
 </html>

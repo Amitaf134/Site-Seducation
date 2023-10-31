@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 /*cabeçalho*/
@@ -115,14 +116,14 @@ header {
 }
 
 /* seções*/
-.conteiner {
+/*.conteiner {
   width: auto;
   height: 400px;
   width: 90%;
   margin-top: 5px;
   padding: 0;
   margin-left: 50px;
-}
+} */
 
 .conteiner h2 {
   margin-left: 40px;
@@ -131,13 +132,13 @@ header {
   font-size: 2em;
 }
 
-.conteiner img {
+/* .conteiner img {
   width: 300px;
   height: 300px;
   border-radius: 15px;
   position: absolute;
   left: 10px;
-}
+} */
 
 .conteiner h3 {
   margin-left: 60px;
@@ -217,16 +218,63 @@ dialog button {
   border-radius: 50%;
 
 }
-.my-carousel {
+
+/* carrossel */
+.container {
+  position: relative;
+  padding: 15px;
+  max-width: 740px;
+  margin: 0 auto;
+
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+
+}
+
+/*.gallery {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+} */
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 15px;
+  line-height: 200px;
+  width: 30px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, black);
+
+}
+
+/* .gallery-wrapper {
   display: flex;
   overflow: hidden;
 }
 
-.my-carousel div {
+.gallery-wrapper div {
   flex: 1;
 }
 
-.my-carousel img {
+.gallery-wrapper img {
   max-width: 100%;
   height: auto;
   margin: 0 0.5rem;
@@ -236,11 +284,11 @@ dialog button {
   transition: 0.2s;
 }
 
-.my-carousel img:hover {
-  opacity: 1;
-}
+.gallery-wrapper img:hover {
+  opacity: 1; 
+} */
 
-.my-prev{
+.my-prev {
   background-color: #295CCB;
 }
 
@@ -304,4 +352,3 @@ dialog button {
     margin-top: 5px;
   }
 }
-
