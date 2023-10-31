@@ -7,6 +7,7 @@ session_start();
 <head>
   <title> Perfil </title>
   <link href="css/perfil.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,10 @@ session_start();
 
 <body>
   <header class="perfiheader">
-
-    <!-- pra botao pra editar la no coisa -->
-    <!-- ata, agora traduz -->
-    <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" width="30px" height="30px" onclick="window.location.href='index.php'">
+    <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" width="30px" height="30px" onclick="window.location.href='telaPrincipal.php'">
     <img src="img/ondulacao.svg">
     <div class="imgPerfil">
-      <!-- editar a foto/botão -->
-      <button id="buttonEditar" type="button" onclick="editar()"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></button>
+      <a onclick="editar()" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></a>
       <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
       <!-- <p>amo o flamengo (memtira)</p> -->
 

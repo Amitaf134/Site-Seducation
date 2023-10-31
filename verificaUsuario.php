@@ -50,7 +50,7 @@ if (isset($_POST['cadastrar'])) {
       }
     } else {
 
-      $path = "img/icons/foto_generica.png";
+      $path = "img/icons/perfilDois.png";
       $sql = "INSERT INTO `usuario`(`nome`, `email`, `senha`,`caminho`) values('$usuario', '$email', '$senha','$path')";
       $statement = $link->prepare($sql);
       if ($statement->execute()) {

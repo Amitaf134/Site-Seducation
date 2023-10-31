@@ -28,7 +28,7 @@ session_start();
 
 <body>
   <header>
-    <a href="perfil.php"><img src="img/logos.png" id="logo"></a>
+    <img src="img/logos.png" id="logo">
 
     <!--Barra de Pesquisa-->
     <div class="brrPesq" onmouseleave="barraV()">
@@ -37,10 +37,7 @@ session_start();
     </div>
 
     <!-- botões de login e cadastro-->
-    <div class="bts">
-      <a href="perfil.php"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
-    </div>
-
+      <a href="perfil.php" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
   </header>
   <nav class=" menu">
     <ul>

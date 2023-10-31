@@ -212,7 +212,8 @@ dialog button {
   left: 95px;
 }
 
-.perfiheader .imgPerfil a img {
+/*FOTO DE PERFIL REDONDAAAAAAAAAAAAA*/
+.fotoPerfil {
 
   margin-top: 30px;
   border-radius: 50%;
@@ -223,8 +224,8 @@ dialog button {
 .container {
   position: relative;
   padding: 15px;
-  max-width: 740px;
-  margin: 0 auto;
+  width: auto;
+  margin: 5px;
 
 }
 
@@ -245,6 +246,15 @@ dialog button {
   flex-flow: row nowrap;
   gap: 15px;
 
+}
+
+.gallery .imgCarrosel {
+  width: 340px;
+  height: 320px;
+  border-radius: 55%;
+  border-radius: 15px;
+  margin-left: 20px;
+  ;
 }
 
 .arrow-left,

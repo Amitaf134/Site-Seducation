@@ -102,7 +102,7 @@ body {
   top: 0;
 }
 
-/* pop-up */
+/* tela pop-up editar perfil etc */
 dialog {
   position: absolute;
   background-color: #D1DFE1;
@@ -170,6 +170,7 @@ dialog #editarPerfilFoto {
   font-size: 2em;
 }
 
+/* imagem perfil*/
 .conteiner img {
   width: 300px;
   height: 300px;
@@ -195,4 +196,8 @@ dialog label {
 /*bot sair(?)*/
 dialog button {
   margin-top: 10px;
+}
+
+#editar {
+  height: 550px;
 }
