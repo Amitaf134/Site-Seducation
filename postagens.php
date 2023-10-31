@@ -19,12 +19,14 @@
   <dialog class="telaPostagem" id="posts">
     <button id="sair" type="button" onclick="sair()"> X </button>
     <form method="post" action="verificaUsuario.php" id="posts">
+      <!-- ainda falta adicionar a imagem -->
       <img src="<?php echo $_SESSION['caminhoImg'] ?>" width="1rem" height="1rem">
+      <!-- ta funcionando mas falta ajeitar na telinha -->
       <h4> <?php echo $_SESSION['nomeUser'] ?> </h4>
 
       <textarea placeholder="O que está acontecendo..." rows="9" cols="50"> </textarea>
       <br> <br>
-      <input id="postar" name="postar" type="submit" value="Postar">
+      <input id="postar" name="postar" type="submit" class="inputSubmit" value="Postar">
     </form>
   </dialog>
 </body>

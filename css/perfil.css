@@ -212,22 +212,11 @@ dialog button {
   border: none;
   font-size: 1em;
   font-style: bold;
-  left: 2;
+  left: 10;
+  top: 5;
+}
+
+.telaPostagem h4 {
+  left: 10;
   top: 2;
-}
-
-.telaPostagem input {
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  padding: 8px;
-  background-color: var(--secundary-color);
-  font-family: 'Inter', sans-serif;
-  color: white;
-  right: 0;
-  bottom: 5;
-}
-
-#editar {
-  height: 550px;
 }
