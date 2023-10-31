@@ -196,3 +196,33 @@ dialog label {
 dialog button {
   margin-top: 10px;
 }
+
+.telaPostagem {
+  position: absolute;
+  background-color: white;
+  border-radius: 5%;
+  width: 420px;
+  height: 290px;
+}
+
+.telaPostagem button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-style: bold;
+  left: 2;
+  top: 2;
+}
+
+.telaPostagem input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  padding: 8px;
+  background-color: var(--secundary-color);
+  font-family: 'Inter', sans-serif;
+  color: white;
+  right: 0;
+  bottom: 5;
+}
