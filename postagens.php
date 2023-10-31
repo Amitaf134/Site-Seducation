@@ -16,8 +16,14 @@
 </head>
 
 <body>
-  <!--abri essa porra pra editar so que a milly ainda nao fez la no figma enrao nao sei como faz sos sos sos-->
-  <h3> teste </h3>
+  <dialog class="telaPostagem" id="Posts">
+    <form method="post" action="verificaUsuario.php" id="posts">
+      <img src="<?php echo $_SESSION['caminhoImg'] ?>" width="1rem" height="20px">
+      <h4> <?php echo $_SESSION['nomeUser'] ?> </h4>
+      <!-- <textarea> </textarea> -->
+      <input id="postar" name="postar" type="submit" class="inputSubmit" value="Postar">
+    </form>
+  </dialog>
 </body>
 
 </html>

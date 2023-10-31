@@ -54,9 +54,9 @@
       <input type="password" id="confirm_senha" name="confirmSenha">
       <br>
       <label for="foto">Foto</label>
-      <input type="file" name="pic" accept="image/*" >
-        <br>
-      <input id="cadastrar" name="cadastrar"  type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
+      <input type="file" name="pic" accept="image/*">
+      <br>
+      <input id="cadastrar" name="cadastrar" type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
     </form>
   </dialog>
 </body>

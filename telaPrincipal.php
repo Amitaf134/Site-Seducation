@@ -1,5 +1,5 @@
 <?php
-    session_start();
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -25,6 +25,7 @@
   <script type="text/javascript" src="js/cadastro.js"></script>
   <meta charset="utf-8">
 </head>
+
 <body>
   <header>
     <a href="perfil.php"><img src="img/logos.png" id="logo"></a>
@@ -37,7 +38,7 @@
 
     <!-- botões de login e cadastro-->
     <div class="bts">
-    <a href="perfil.php"><img src="<?php echo $_SESSION['nomeUser'] ?>" id="logo"></a>
+      <a href="perfil.php"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
     </div>
 
   </header>
