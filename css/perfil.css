@@ -244,3 +244,14 @@ dialog button {
   margin-bottom: 2%;
   margin-right: 5%;
 }
+
+/* ------ TELA DE EDITAR PERFIL -------*/
+.telaEditar {
+  width: 500px;
+  height: 700px;
+}
+
+.telaEditar img {
+  width: 100px;
+  height: 50px;
+}

@@ -49,8 +49,9 @@ session_start();
   <dialog class="telaEditar" id="editar">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
 
-    <h2> Editar Pefil </h2>
-    <img src="pefilDois.png" id="editarPerfilFoto" width="75%" height="70%" />
+    <h3> Editar Perfil </h3>
+    <!-- comecei mas não terminei -->
+    <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
     <form method="POST" action="verificaUsuario.php">
 
       <label for="nome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
