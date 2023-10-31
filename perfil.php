@@ -1,7 +1,6 @@
 <?php
 session_start();
 ?>
-
 <html>
 
 <head>
@@ -46,7 +45,6 @@ session_start();
   <?php
   include('postagens.php');
   ?>
-
   <!-- popup de editar o perfil -->
   <dialog class="telaEditar" id="editar">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>

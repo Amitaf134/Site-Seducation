@@ -5,7 +5,6 @@ $bancoDados = new db();
 $link = $bancoDados->conecta_mysql();
 
 if (isset($_POST['cadastrar'])) {
-  //aq ele ta verificando se os dados foram enviados, so q o problema é q nao estao mas ele nao da erro nenhum e o tabela ta vazia
 
   $usuario = $_POST['nomeUser'];
   $email = $_POST['email'];
@@ -23,7 +22,6 @@ if (isset($_POST['cadastrar'])) {
       if ($conteudo['size'] > 2097152) {
         die("Arquivo muito grande!! MAX: 2MB");
       }
-
 
       $pasta = "img/icons/";
       $nomeArquivo = $conteudo['name']; //pegando o nome da imagem
@@ -68,7 +66,7 @@ if (isset($_POST['cadastrar'])) {
   $emailL = $_POST['lemail'];
   $senhaL = $_POST['lenha'];
 
-  $sql = "SELECT `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
+  $sql = "SELECT `codigo`, `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
   $statement = $link->prepare($sql);
   $statement->execute();
 
@@ -79,6 +77,7 @@ if (isset($_POST['cadastrar'])) {
   if ($total > 0) {
     $_SESSION['nomeUser'] = $result['nome'];
     $_SESSION['caminhoImg'] = $result['caminho'];
+    $_SESSION['codiguinho'] = $result['codigo'];
 
     header('Location: telaPrincipal.php');
   } else {
