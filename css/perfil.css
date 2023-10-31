@@ -196,11 +196,3 @@ dialog label {
 dialog button {
   margin-top: 10px;
 }
-
-.telaPostagem {
-  position: absolute;
-  background-color: white;
-  border-radius: 5%;
-  width: 400px;
-  height: 350px;
-}
