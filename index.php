@@ -30,7 +30,19 @@ include('conexao.php');
     <img src="img/artigoonze.png" alt="Artigo 5" id="img-um" width="340px" height="320px" border-radius="55%" 
     style="border-radius: 15px; margin-left: 1300px;" />
 
-    <script type="text/javascript">
+    <head>
+<script 
+src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script 
+src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
+<script>
+<script src="SiteSeducation/Site-Seducation/js/PagInicial.js"></script>
+    </head>
+
+<!-- Importando jQuery -->
+    <script src="jquery-3.7.1.min.js"></>
+    <script src="PgInicial.js"></script>
+
   $(document).ready(function() {
     $('.my-carousel').slick({
       dots: true,
@@ -47,7 +59,6 @@ include('conexao.php');
 </script>
 </div>
 </section>
-
 
 <section class="conteiner">
     <h2>Postagens</h2>
