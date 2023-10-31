@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 
 <head>
@@ -21,14 +25,14 @@
     <!-- pra botao pra editar la no coisa -->
     <!-- ata, agora traduz -->
     <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" width="30px" height="30px" onclick="window.location.href='index.php'">
-    <img src="img/ondulacao.svg" >
+    <img src="img/ondulacao.svg">
     <div class="imgPerfil">
       <!-- editar a foto/botão -->
-   <button id="buttonEditar" type="button" onclick= "editar()" ><img src="img/perfil.png" width="150px" height="150px"></button>
-    <h3> Jmilly </h3>
-    <p>amo o flamengo (memtira)</p> 
+      <button id="buttonEditar" type="button" onclick="editar()"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></button>
+      <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
+      <!-- <p>amo o flamengo (memtira)</p> -->
 
-</div>
+    </div>
   </header>
 
   <nav class="menu" id="menu">
@@ -39,8 +43,8 @@
   </nav>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button" ><a href="postagens.php">+</a></button>
-    
+    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
+
   </footer>
 
   <!-- popup de editar o perfil -->
@@ -48,7 +52,7 @@
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
 
     <h2> Editar Pefil </h2>
-    <img src="pefilDois.png" id="editarPerfilFoto" width="75%" height="70%"/>
+    <img src="pefilDois.png" id="editarPerfilFoto" width="75%" height="70%" />
     <form method="POST" action="verificaUsuariophp.">
 
       <label for="nome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
@@ -58,7 +62,7 @@
       <label for="bio" style="position: absolute; left: 20px; top: 410px;"> Bio </label>
       <input type="text" id="lbio" style="position: absolute; left: 110px; top: 365px;">
       <br>
-      
+
       <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar" style="position: absolute; left: 164px; top: 500px;">
 
     </form>

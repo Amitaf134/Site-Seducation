@@ -1,9 +1,12 @@
+<?php
+session_start();
+?>
 <html>
 
 <head>
   <title> Curtidas </title>
   <link href="img/logos.png" rel="icon">
-  <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/perfil.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,9 +24,9 @@
     <img src="img/voltarPagina.png" style="position: absolute; top: 19px; left: 10px" width="30px" height="30px" onclick="window.location.href='index.php'">
     <img src="img/ondulacao.svg">
     <div class="imgPerfil">
-      <a><img src="img/perfil.png" width="150px" height="150px"></a>
-      <h3> Jmilly </h3>
-      <p>NAO sou uma fa de vivi</p>
+      <a><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></a>
+      <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
+      <!-- <p>NAO sou uma fa de vivi</p> -->
     </div>
   </header>
 
@@ -35,7 +38,6 @@
   </nav>
 
   <footer>
-    <!-- tá funcionando-->
     <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
   </footer>
 </body>
