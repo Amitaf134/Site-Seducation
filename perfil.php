@@ -15,6 +15,7 @@ session_start();
 
   <!--JavaScript-->
   <script type="text/javascript" src="js/editarPerfil.js"></script>
+  <script type="text/javascript" src="js/postagem.js"></script>
 
   <meta charset="utf-8">
 </head>
@@ -43,9 +44,11 @@ session_start();
   </nav>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
-
+    <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
   </footer>
+  <?php
+  include('postagens.php');
+  ?>
 
   <!-- popup de editar o perfil -->
   <dialog class="telaEditar" id="editar">
@@ -53,7 +56,7 @@ session_start();
 
     <h2> Editar Pefil </h2>
     <img src="pefilDois.png" id="editarPerfilFoto" width="75%" height="70%" />
-    <form method="POST" action="verificaUsuariophp.">
+    <form method="POST" action="verificaUsuario.php">
 
       <label for="nome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
       <input type="text" id="lnome" style="position: absolute; left: 110px; top: 430px;">
