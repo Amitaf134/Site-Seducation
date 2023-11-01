@@ -42,6 +42,8 @@ if (isset($_POST['cadastrar'])) {
         echo "Usuário cadastrado com sucesso";
         $_SESSION['nomeUser'] = $usuario;
         $_SESSION['caminhoImg'] = $path;
+        $_SESSION['email'] = $email;
+
         header('Location: telaPrincipal.php');
       } else {
         echo "Erro";
@@ -54,6 +56,7 @@ if (isset($_POST['cadastrar'])) {
       if ($statement->execute()) {
         $_SESSION['nomeUser'] = $usuario;
         $_SESSION['caminhoImg'] = $path;
+        $_SESSION['email'] = $email;
         header('Location: telaPrincipal.php');
       } else {
         echo "Erro";
@@ -66,7 +69,7 @@ if (isset($_POST['cadastrar'])) {
   $emailL = $_POST['lemail'];
   $senhaL = $_POST['lenha'];
 
-  $sql = "SELECT `codigo`, `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
+  $sql = "SELECT `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
   $statement = $link->prepare($sql);
   $statement->execute();
 
@@ -77,7 +80,6 @@ if (isset($_POST['cadastrar'])) {
   if ($total > 0) {
     $_SESSION['nomeUser'] = $result['nome'];
     $_SESSION['caminhoImg'] = $result['caminho'];
-    $_SESSION['codiguinho'] = $result['codigo'];
 
     header('Location: telaPrincipal.php');
   } else {
