@@ -367,3 +367,18 @@ dialog button {
     margin-top: 5px;
   }
 }
+
+/* aparecer mensagenzinha de 2 seg na tela */
+@keyframes hide {
+  from {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.mensagemzinha {
+  animation: hide 2s 2s forwards
+}

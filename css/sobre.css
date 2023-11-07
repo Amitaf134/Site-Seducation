@@ -24,7 +24,8 @@
 .sobre .caixa_sobre {
     width: 300px;
     height: 400px;
-    box-shadow: 0 0 0px 0px var(--primary-color);
+    border: 0.1rem solid;
+    box-shadow: 0.5rem 0.5rem var(--primary-color);
     margin-right: 25px;
     margin-top: 10px;
     margin: 30px;
@@ -70,14 +71,13 @@
 
 
 /*RESPONSIVIDADE*/
-@media screen and(max-width:480px){
-    .conteinerS{
+@media screen and(max-width:480px) {
+    .conteinerS {
         width: 90%;
     }
 
-.sobre{
-    width: 100%;
-    display: flex;
+    .sobre {
+        width: 100%;
+        display: flex;
+    }
 }
-}
-

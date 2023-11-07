@@ -44,7 +44,8 @@ if (isset($_POST['cadastrar'])) {
         $_SESSION['caminhoImg'] = $path;
         $_SESSION['email'] = $email;
 
-        header('Location: telaPrincipal.php');
+        header('Location: index.php');
+        echo "<div class = 'mensagemzinha'> Usuário Cadastrado! Por favor, faça o login! </div>";
       } else {
         echo "Erro";
       }
@@ -57,7 +58,9 @@ if (isset($_POST['cadastrar'])) {
         $_SESSION['nomeUser'] = $usuario;
         $_SESSION['caminhoImg'] = $path;
         $_SESSION['email'] = $email;
-        header('Location: telaPrincipal.php');
+        header('Location: index.php');
+        //<div class="mensagemzinhas"> "Usuário Cadastrado!" </div>
+        echo "";
       } else {
         echo "Erro";
       }
