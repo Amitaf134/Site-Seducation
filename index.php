@@ -10,29 +10,42 @@ include('conexao.php');
 
   <section class="container">
   <h2> Assuntos em Alta </h2>
-  <button class="btPassarC" id="btDireito" arial-label="Previous image"> ⬅ </button>
-  <button class="btPassarC" id="btEsquerdo" arial-label="Next image"> ➡ </button>
+    <!--emi-->
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
 
-  <!-- overflow cm largura fixa -->
-  <div class="gallery-wrapper">
-    <!-- um elemento que irá se mover dentro do wrapper -->
-    <div class="gallery" id="galeria1">
-    
-    <img src="img/artigoum.png" alt="Artigo 1" id="img-um" class="imgCarrosel"/>
 
-    <img src="img/artigodois.png" alt="Artigo 2" id="img-um" class="imgCarrosel" />
-
-    <img src="img/artigotres.png" alt="Artigo 3" id="img-um" class="imgCarrosel" />
-
-    <img src="img/artigoseis.png" alt="Artigo 4" id="img-um" class="imgCarrosel"/>
-   </div>
-    
-   <div class="gallery" id="galeria2">
-    <img src="img/artigoonze.png" alt="Artigo 5" id="img-um" class="imgCarrosel" />
-    <img src="img/artigoonze.png" alt="Artigo 5" id="img-um" class="imgCarrosel"/>
-   </div>
-</div>
-</div>
+        <div class="slide">
+          <img src="artigocinco.png " alt="">
+        </div>
+        <div class="slide">
+          <img src="artigodez.png " alt="">
+        </div>
+        <div class="slide">
+          <img src="artigodois.png" alt="">
+        </div>
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+      </div>
+      <div class="navigation-bar">
+        <label class="manual-btn" for="radio1"></label>
+        <label class="manual-btn" for="radio2"></label>
+        <label class="manual-btn" for="radio3"></label>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <!--emi-->
 </section>
 
 <section class="conteiner">

@@ -72,7 +72,7 @@ if (isset($_POST['cadastrar'])) {
   $emailL = $_POST['lemail'];
   $senhaL = $_POST['lenha'];
 
-  $sql = "SELECT `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
+  $sql = "SELECT `codigo`, `nome`, `caminho` FROM `usuario` WHERE `email`='$emailL'";
   $statement = $link->prepare($sql);
   $statement->execute();
 
@@ -81,6 +81,7 @@ if (isset($_POST['cadastrar'])) {
 
   $total = $statement->rowCount();
   if ($total > 0) {
+    $_SESSION['codigo'] = $result['codigo'];
     $_SESSION['nomeUser'] = $result['nome'];
     $_SESSION['caminhoImg'] = $result['caminho'];
 
