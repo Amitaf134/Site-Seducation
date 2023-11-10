@@ -62,17 +62,44 @@ $(document).ready(function() {
     
     }
 
-    //controlar o movimento do carousel
-    function move_carousel(dir) {
-      switch (dir) {
-        case "left":
-        carousel.classList.add("carousel_move_left");
-        break;
-      case "right":
-        carousel.classList.add("carousel_move_right");
-        break;
-      }
+    /*carroussel YIPEEE*/
+    
+/* seleciona todos os "control" das setas*/
+const controls = document.querySelectorAll(".control");
+let currentItem = 0;
+/*intems na classe/disponíveis*/
+const items = document.querySelectorAll(".items");
+const maxItems = items.length;
+
+/* evento click para as setas*/
+controls.forEach((control) => {
+  control.addEventListener('click', (e) => {
+    isLeft = e.target.classList.contains("arrow-left");
+
+    if (isLeft) {
+      currentItem -= 1;
+    } else {
+      currentItem += 1;
+    } 
+
+    if (currentItem >= maxItems) {
+      currentItem = 0;
     }
+
+    if (currentItem < 0) {
+      currentItem = maxItems - 1;
+    }
+
+    items.forEach((item) => item.classList.remove("current-item"));
+
+    items[currentItem].scrollIntoView({
+      behavior: "smooth",
+      inline: "center"
+    });
+
+    items[currentItem].classList.add("current-item");
+  });
+});
     
    }
 

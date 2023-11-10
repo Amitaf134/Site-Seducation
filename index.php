@@ -11,40 +11,26 @@ include('conexao.php');
   <section class="container">
   <h2> Assuntos em Alta </h2>
     <!--emi-->
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slides">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
+    <div class="container">
+  <button class="arrow-left control" aria-label="Previous image"> ◀ </button>
+  <button class="arrow-right control" aria-label="Next Image"> ▶ </button>
+    
+  <!-- overflow cm largura fixa -->
+    <div class="gallery-wrapper">
+    <!-- um elemento que irá se mover dentro do wrapper -->
+    <div class="gallery" id="galeria1">
 
+      <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item">
+      <img src="img/artigodez.png" alt="Artigo Dez" class="item current-item">
+      <img src="img/artigocinco.png" alt="Artigo Cinco" class="item current-item">
+      <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
+      <img src="img/artigotres.png" alt="Artigo Tres" class="item current-item">
+      <img src="img/artigoseis.png" alt="Artigo Seis" class="item current-item">
+      <img src="img/artigodoze.png" alt="Artigo Doze" class="item current-item">
 
-        <div class="slide">
-          <img src="artigocinco.png " alt="">
-        </div>
-        <div class="slide">
-          <img src="artigodez.png " alt="">
-        </div>
-        <div class="slide">
-          <img src="artigodois.png" alt="">
-        </div>
-        <div class="navigation-auto">
-          <div class="auto-btn1"></div>
-          <div class="auto-btn2"></div>
-          <div class="auto-btn3"></div>
-        </div>
-      </div>
-      <div class="navigation-bar">
-        <label class="manual-btn" for="radio1"></label>
-        <label class="manual-btn" for="radio2"></label>
-        <label class="manual-btn" for="radio3"></label>
-      </div>
     </div>
   </div>
-  </div>
-  </div>
-  </div>
-  </div>
+</div>
   <!--emi-->
 </section>
 
