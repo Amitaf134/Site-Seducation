@@ -1,8 +1,3 @@
-<script src="sos/jquery-3.7.1.min.js" 
-hrf="/path/to/your/slick-carousel.js" 
-href="jmill/slick.js"></script>
-
-
 function barraPesq(){
     var barra = document.getElementById('brPesq').style.visibility;
     document.getElementById('brPesq').style.visibility = 'visible';
