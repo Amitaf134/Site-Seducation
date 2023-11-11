@@ -102,6 +102,53 @@ body {
   top: 0;
 }
 
+
+/*------ TELA DE POSTAGEM ------*/
+
+.telaPostagem {
+  background-color: white;
+  border-radius: 5%;
+  width: 470px;
+  height: 335px;
+}
+
+/* botao de sair */
+.telaPostagem button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  font-style: bold;
+  left: 10;
+  top: 5;
+}
+
+/* div da img e do nome de usuario na tela */
+.sesimg {
+  margin-left: 5%;
+  margin-top: 1%;
+  display: flex;
+}
+
+/* img do usuario */
+.box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* nome de usuario */
+.box h4 {
+  margin-left: 7px;
+}
+
+/* botao de postar
+  nao consegui posicionar input na pontinha como eu queria então desisti
+*/
+.telaPostagem input {
+  margin-bottom: 2%;
+  margin-right: 5%;
+}
 /* tela pop-up editar perfil etc */
 dialog {
   position: absolute;
@@ -196,53 +243,6 @@ dialog label {
 /*bot sair(?)*/
 dialog button {
   margin-top: 10px;
-}
-
-/*------ TELA DE POSTAGEM ------*/
-
-.telaPostagem {
-  background-color: white;
-  border-radius: 5%;
-  width: 470px;
-  height: 335px;
-}
-
-/* botao de sair */
-.telaPostagem button {
-  position: absolute;
-  background-color: transparent;
-  border: none;
-  font-size: 1em;
-  font-style: bold;
-  left: 10;
-  top: 5;
-}
-
-/* div da img e do nome de usuario na tela */
-.sesimg {
-  margin-left: 5%;
-  margin-top: 1%;
-  display: flex;
-}
-
-/* img do usuario */
-.box img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-/* nome de usuario */
-.box h4 {
-  margin-left: 7px;
-}
-
-/* botao de postar
-  nao consegui posicionar input na pontinha como eu queria então desisti
-*/
-.telaPostagem input {
-  margin-bottom: 2%;
-  margin-right: 5%;
 }
 
 /* ------ TELA DE EDITAR PERFIL -------*/

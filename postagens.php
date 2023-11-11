@@ -4,6 +4,7 @@
   <title> Postagens </title>
   <link href="img/logos.png" rel="icon">
   <link href="css/perfil.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">

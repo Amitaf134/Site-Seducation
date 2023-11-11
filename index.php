@@ -34,14 +34,9 @@ include('conexao.php');
   <!--emi-->
 </section>
 
-<section class="conteiner">
+<section class="conteinerPost">
     <h2>Postagens</h2>
-    <table>
-				<tr>
-					<th >Imagem</th>
-          <th>nome</th>
-					<th>texto</th>
-				</tr>	
+    <ul class="Ipostagens">
     <?php
     $bancoDados = new db();
     $link = $bancoDados->conecta_mysql();
@@ -63,18 +58,20 @@ include('conexao.php');
       $imagem = $user['caminho'];
 
       ?>
-      <tr>
-        <td><img src="<?php echo $imagem;?>" width="50px"heigth="50px"></td>
-       <td><?php echo $nome;?></td>
-			 <td><?php echo $texto;?></td>
-    </tr>
+      <li class="post">
+          <img src="<?php echo $imagem;?>" id="imgPost">
+          <h4><?php echo $nome;?></h4>
+          <div class="textoPost">
+            <p><?php echo $texto;?></p>
+          <div>
+    </li>
       <?php
 
     }
     
 
     ?>
-    </table>
+    </ul>
 
   </section>
   <!--login e cadastro-->
