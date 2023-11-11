@@ -36,6 +36,45 @@ include('conexao.php');
 
 <section class="conteiner">
     <h2>Postagens</h2>
+    <table>
+				<tr>
+					<th >Imagem</th>
+          <th>nome</th>
+					<th>texto</th>
+				</tr>	
+    <?php
+    $bancoDados = new db();
+    $link = $bancoDados->conecta_mysql();
+
+    $sql ="SELECT * FROM postagem;";
+    $statement = $link->prepare($sql);
+    $statement->execute();
+  
+    while($result = $statement->fetch(PDO::FETCH_ASSOC)){
+      $id_usuer = $result['id_usuario'];
+      $texto = $result['texto'];
+
+      $sql ="SELECT `nome`,`caminho` FROM usuario WHERE `codigo` = '$id_usuer';";
+      $pegar = $link->prepare($sql);
+      $pegar->execute();
+      $user = $pegar->fetch(PDO::FETCH_ASSOC);
+     
+      $nome = $user['nome'];
+      $imagem = $user['caminho'];
+
+      ?>
+      <tr>
+        <td><img src="<?php echo $imagem;?>" width="50px"heigth="50px"></td>
+       <td><?php echo $nome;?></td>
+			 <td><?php echo $texto;?></td>
+    </tr>
+      <?php
+
+    }
+    
+
+    ?>
+    </table>
 
   </section>
   <!--login e cadastro-->

@@ -11,7 +11,7 @@ echo $codi;
 $sql = "INSERT INTO `postagem`(`texto`, `id_usuario`) VALUES('$text', '$codi')";
 $statement = $link->prepare($sql);
 if ($statement->execute()) {
-  echo "Postagem cadastrada!";
+  header('Location: telaPrincipal.php');
 } else {
   echo "Erro";
 }
