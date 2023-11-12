@@ -22,79 +22,22 @@ function mostrarB(){
       });
 }
 
-$(document).ready(function() {
-  $('.my-carousel').slick({
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    slidesToScroll: true,
-    centerMode: true,
-    arrows: false
-  });
-});
 
-   window.onload = function() {
+var btEsquerda = document.getElementById('esquerda');
+var btDireita = document.getElementById('direita');
 
-    //inicializando o djabo do carousel
-    var carousel = document.getElementById("caousel-id");
-    var carousel_conatainer = document.getElementById("carousel-conatainer-id");
+var div1 = document.getElementById('gallery1').style.display;
+var div1 = document.getElementById('gallery2').style.display;
 
-    //adicionar/remover imagens do tal carousel
-    function add_image(image) {
-      var image_container = document.createElement("div");
-      image_container.classList.add("carousel-item");
-      var image = image.cloneNode(true);
-      image_container.appendChild(image);
-      carousel_container.appendChild(image_container);
-    
-    }
+ btEsquerda.addEventListener('click',function(){
+  document.getElementById('gallery1').style.display = 'flex';
+  document.getElementById('gallery2').style.display = 'none';
+  console.log("oi");
+ });
+ 
+ btDireita.addEventListener('click',function(e){
+  document.getElementById('gallery1').style.display= 'none';
+  document.getElementById('gallery2').style.display = 'flex';
+  console.log("olá");
 
-    function remove_image(image) {
-      image.parentNode.removeChild(image);
-      carousel_container.removeChild(image.parentNode);
-    
-    }
-
-    /*carroussel YIPEEE*/
-    
-/* seleciona todos os "control" das setas*/
-const controls = document.querySelectorAll(".control");
-let currentItem = 0;
-/*intems na classe/disponíveis*/
-const items = document.querySelectorAll(".items");
-const maxItems = items.length;
-
-/* evento click para as setas*/
-controls.forEach((control) => {
-  control.addEventListener('click', (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
-
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    } 
-
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
-  });
-});
-    
-   }
-
+ });

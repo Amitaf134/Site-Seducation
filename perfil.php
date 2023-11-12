@@ -1,12 +1,25 @@
 <?php
 session_start();
+
+
+include('conexao.php');
+    $bancoDados = new db();
+    $link = $bancoDados->conecta_mysql();
+
+    $cod = $_SESSION['codigo'];
+    $sqlSelect = "SELECT `biografia` FROM `usuario` WHERE `codigo`= '$cod'";
+
+    $statement = $link->prepare($sqlSelect);
+    $statement->execute();
+    $result = $statement->fetch(PDO::FETCH_ASSOC);
+    $sl = (object) $result;
+    $_SESSION['biografia'] = $result['biografia'];
 ?>
 <html>
 
 <head>
   <title> Perfil </title>
   <link href="css/perfil.css" rel="stylesheet">
-  <link href="css/estilo.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +40,8 @@ session_start();
     <div class="imgPerfil">
       <a onclick="editar()" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></a>
       <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
-      <!-- <p>amo o flamengo (memtira)</p> -->
+      <p><?php echo $_SESSION['biografia'] ?></p>
+
 
     </div>
   </header>
@@ -48,23 +62,38 @@ session_start();
   <!-- popup de editar o perfil -->
   <dialog class="telaEditar" id="editar">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
-
     <h3> Editar Perfil </h3>
     <!-- comecei mas não terminei -->
     <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
     <form method="POST" action="verificaUsuario.php">
-
-      <label for="nome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
-      <input type="text" id="lnome" style="position: absolute; left: 110px; top: 430px;">
+    
+      <label for="lnome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
+      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser'];?>" style="position: absolute; left: 110px; top:345px;">
       <br>
 
-      <label for="bio" style="position: absolute; left: 20px; top: 410px;"> Bio </label>
-      <input type="text" id="lbio" style="position: absolute; left: 110px; top: 365px;">
+      <label for="lemail" style="position: absolute; left: 20px; top: 410px;"> Email: </label>
+      <input type="email" name="emailN" id="emailN" value="<?php $email?>" style="position: absolute; left: 110px; top: 410px;">
       <br>
-
+      <label for="bio" style="position: absolute; left: 20px; top: 465px;"> Bio </label>
+      <input type="text" id="bioN" value="<?php echo $_SESSION['biografia'] ?>" style="position: absolute; left: 110px; top: 465px;">
+      <br>
       <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar" style="position: absolute; left: 164px; top: 500px;">
 
     </form>
+    <?php
+      $nome = $_POST['nomeN'];
+      $email = $_POST['emailN'];
+      $biografia = $_POST['bioN'];
+    
+      $cod = $_SESSION['codigo'];
+      $sqlUpdate = "UPDATE `usuario` SET `nome`='$nome', `email`='$email', `biografia`='$biografia' WHERE `codigo`='$cod'";
+      $statement = $link->prepare($sqlUpdate);
+      $statement->execute();
+    
+      $result = $statement->fetch(PDO::FETCH_ASSOC);
+      header('Location: perfil.php');
+  
+    ?>
   </dialog>
 
 </body>

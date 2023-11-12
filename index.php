@@ -11,24 +11,32 @@ include('conexao.php');
   <section class="container">
   <h2> Assuntos em Alta </h2>
     <!--emi-->
-    <div class="container">
-  <button class="arrow-left control" aria-label="Previous image"> ◀ </button>
-  <button class="arrow-right control" aria-label="Next Image"> ▶ </button>
+    <div class="carrosel">
+  <button class="arrow-left control" id="esquerda" aria-label="Previous image"> ◀ </button>
+  <button class="arrow-right control" id="direita" aria-label="Next Image"> ▶ </button>
     
   <!-- overflow cm largura fixa -->
-    <div class="gallery-wrapper">
+    <div class="gallery-wrapper" id="gallery-wrapper">
     <!-- um elemento que irá se mover dentro do wrapper -->
-    <div class="gallery" id="galeria1">
+    <div class="gallery" id="gallery1">
 
       <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item">
       <img src="img/artigodez.png" alt="Artigo Dez" class="item current-item">
       <img src="img/artigocinco.png" alt="Artigo Cinco" class="item current-item">
       <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
       <img src="img/artigotres.png" alt="Artigo Tres" class="item current-item">
-      <img src="img/artigoseis.png" alt="Artigo Seis" class="item current-item">
-      <img src="img/artigodoze.png" alt="Artigo Doze" class="item current-item">
-
     </div>
+    <div class="gallery" id="gallery2">
+
+      <img src="img/artigoum.png" alt="Artigo Um" class="item current-item">
+      <img src="img/artigodois.png" alt="Artigo Dez" class="item current-item">
+      <img src="img/artigoseis.png" alt="Artigo Cinco" class="item current-item">
+      <img src="img/artigosete.png" alt="Artigo Onze" class="item current-item">
+      <img src="img/artigooito.png" alt="Artigo Tres" class="item current-item">
+      
+
+</div>
+
   </div>
 </div>
   <!--emi-->

@@ -228,18 +228,16 @@ dialog button {
   font-family: sans-serif;
 }*/
 
-.container {
+.carrosel {
   position: relative;
   padding: 15px;
-  max-width: 2040px;
+  max-width: auto;
   margin: 0 auto;
 }
 
-.gallery-wrapper {
-  overflow-x: auto;
-}
 
-.arrow-left {
+
+.arrow-right, .arrow-left{
   position: absolute;
   top: 0;
   left: 0;
@@ -247,10 +245,11 @@ dialog button {
   bottom: 0;
   font-size: 20px;
   line-height: 250px;
+  text-align: center;
   width: 40px;
   color: #fff;
   transition: all 600ms ease-in-out;
-  background: linear-gradient(to right, transparent 0%, blue 550%);
+  background: linear-gradient(to left, transparent 0%, blue 200%);
   opacity: 0.1;
   cursor: pointer;
   border: none;
@@ -260,45 +259,50 @@ dialog button {
   position: absolute;
   left: auto;
   right: 0;
-  /*relação com a altura d cima do container*/
-  top: 0;
-  bottom: 0;
-  /*grossura da seta*/
-  font-size: 20px;
-  line-height: 250px;
-  /*largura da seta*/
-  width: 40px;
-  color: #fff;
-  transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, blue 550%);
-  opacity: 0.1;
-  cursor: pointer;
-  border: none;
-  transition: all 600ms ease-in-out;
+  background: linear-gradient(to right, transparent 0%, blue 200%);
 }
 
 .arrow-left:hover,
 .arrow-right:hover {
   opacity: 1;
 }
-
-.gallery {
+.gallery-wrapper {
+  overflow-x: auto;
+  width: 95%;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   flex-flow: row nowrap;
-  gap: 15px;
 }
 
+.gallery-wrapper .gallery {
+  display: flex;
+  position: relative;
+  top: 0;
+}
+ 
+#gallery1{
+  background-color: pink;
+  display: flex;
+ }
+
+ 
+#gallery2{
+  display: flex;
+ }
 .item {
   width: 250px;
   height: 250px;
   flex-shrink: 0;
-  /*transition: all 600ms ease-in-out;
-  opacity: 0.5;*/
+  transition: all 600ms ease-in-out;
+  margin-right: 10px;
+  
 }
 
-.current-item {
+.current-item:hover {
   opacity: 1;
 }
+
 
 /* This is from w3schools 
 /* 

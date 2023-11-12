@@ -88,5 +88,5 @@ if (isset($_POST['cadastrar'])) {
     header('Location: telaPrincipal.php');
   } else {
     echo ("Usuario não encontrado");
-  }
+  } 
 }
