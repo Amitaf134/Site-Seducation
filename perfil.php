@@ -1,19 +1,21 @@
 <?php
 session_start();
 
-
 include('conexao.php');
-    $bancoDados = new db();
-    $link = $bancoDados->conecta_mysql();
+$bancoDados = new db();
+$link = $bancoDados->conecta_mysql();
 
-    $cod = $_SESSION['codigo'];
-    $sqlSelect = "SELECT `biografia` FROM `usuario` WHERE `codigo`= '$cod'";
+$nome = $_POST['nomeN'];
+$email = $_POST['emailN'];
+$biografia = $_POST['bioN'];
 
-    $statement = $link->prepare($sqlSelect);
-    $statement->execute();
-    $result = $statement->fetch(PDO::FETCH_ASSOC);
-    $sl = (object) $result;
-    $_SESSION['biografia'] = $result['biografia'];
+$cod = $_SESSION['codigo'];
+$sqlUpdate = "UPDATE `usuario` SET `nome`='$nome', `email`='$email', `biografia`='$biografia' WHERE `codigo`='$cod'";
+$statement = $link->prepare($sqlUpdate);
+$statement->execute();
+
+$result = $statement->fetch(PDO::FETCH_ASSOC);
+header('Location: perfil.php');
 ?>
 <html>
 
@@ -41,8 +43,6 @@ include('conexao.php');
       <a onclick="editar()" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></a>
       <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
       <p><?php echo $_SESSION['biografia'] ?></p>
-
-
     </div>
   </header>
 
@@ -63,39 +63,58 @@ include('conexao.php');
   <dialog class="telaEditar" id="editar">
     <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
     <h3> Editar Perfil </h3>
-    <!-- comecei mas não terminei -->
     <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
     <form method="POST" action="verificaUsuario.php">
-    
-      <label for="lnome" style="position: absolute; left: 20px; top: 345px;"> Nome </label>
-      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser'];?>" style="position: absolute; left: 110px; top:345px;">
+      <label for="lnome" id="lnome"> Nome: </label>
+      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser']; ?>">
       <br>
 
-      <label for="lemail" style="position: absolute; left: 20px; top: 410px;"> Email: </label>
-      <input type="email" name="emailN" id="emailN" value="<?php $email?>" style="position: absolute; left: 110px; top: 410px;">
+      <label for="lemail" id="lemail"> Email: </label>
+      <input type="email" name="emailN" id="emailN" value="<?php echo $_SESSION['email'] ?>">
       <br>
-      <label for="bio" style="position: absolute; left: 20px; top: 465px;"> Bio </label>
-      <input type="text" id="bioN" value="<?php echo $_SESSION['biografia'] ?>" style="position: absolute; left: 110px; top: 465px;">
+      <label for="bio" id="bio"> Biografia: </label>
+      <input type="text" id="bioN">
       <br>
-      <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar" style="position: absolute; left: 164px; top: 500px;">
-
+      <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar">
     </form>
-    <?php
-      $nome = $_POST['nomeN'];
-      $email = $_POST['emailN'];
-      $biografia = $_POST['bioN'];
-    
-      $cod = $_SESSION['codigo'];
-      $sqlUpdate = "UPDATE `usuario` SET `nome`='$nome', `email`='$email', `biografia`='$biografia' WHERE `codigo`='$cod'";
-      $statement = $link->prepare($sqlUpdate);
-      $statement->execute();
-    
-      $result = $statement->fetch(PDO::FETCH_ASSOC);
-      header('Location: perfil.php');
-  
-    ?>
   </dialog>
 
+  <section class="conteinerPost">
+    <ul class="Ipostagens">
+      <?php
+      $bancoDados = new db();
+      $link = $bancoDados->conecta_mysql();
+
+      $sql = "SELECT * FROM postagem;";
+      $statement = $link->prepare($sql);
+      $statement->execute();
+
+      while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $id_usuer = $result['id_usuario'];
+        $texto = $result['texto'];
+
+        $sql = "SELECT `nome`,`caminho` FROM usuario WHERE `codigo` = '$id_usuer';";
+        $pegar = $link->prepare($sql);
+        $pegar->execute();
+        $user = $pegar->fetch(PDO::FETCH_ASSOC);
+
+        $nome = $user['nome'];
+        $imagem = $user['caminho'];
+
+      ?>
+        <li class="post">
+          <img src="<?php echo $imagem; ?>" id="imgPost">
+          <h4><?php echo $nome; ?></h4>
+          <div class="textoPost">
+            <p><?php echo $texto; ?></p>
+            <div>
+        </li>
+      <?php
+      }
+      ?>
+    </ul>
+
+  </section>
 </body>
 
 </html>

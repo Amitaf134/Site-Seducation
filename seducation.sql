@@ -11,7 +11,6 @@ CREATE TABLE artigo (
 -- Estrutura para tabela postagem
 
 CREATE TABLE postagem (
-  codigo int NOT NULL primary key auto_increment,
   texto text NOT NULL,
   id_usuario int NOT NULL,
   foreign key(id_usuario) references usuario(codigo)

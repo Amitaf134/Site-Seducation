@@ -1,3 +1,10 @@
+/* na telinha principal */
+.fotinha {
+  position: absolute;
+  right: 95px;
+  margin-top: 30px;
+}
+
 :root {
   --primary-color: #295CCB8C;
   --secundary-color: #485cc7;
@@ -149,6 +156,7 @@ body {
   margin-bottom: 2%;
   margin-right: 5%;
 }
+
 /* tela pop-up editar perfil etc */
 dialog {
   position: absolute;
@@ -236,8 +244,8 @@ dialog #editarPerfilFoto {
 dialog label {
   float: left;
   width: 100px;
-  text-align: left;
-  margin-left: 100px;
+  text-align: justify;
+  margin-left: 0px;
 }
 
 /*bot sair(?)*/
@@ -246,9 +254,9 @@ dialog button {
 }
 
 /* ------ TELA DE EDITAR PERFIL -------*/
-.telaEditar{
-  width: 150px;
-  height: 500px;
+.telaEditar {
+  width: 350px;
+  height: 400px;
 }
 
 .telaEditar #editarPerfilFoto {
