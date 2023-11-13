@@ -26,8 +26,6 @@
 </body>
 </html>
 
-
-
 <?php
  include_once('conexao.php');
  $bancoDados = new db();
