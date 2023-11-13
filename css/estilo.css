@@ -220,13 +220,7 @@ dialog button {
 
 }
 
-/*emi*/
-
-/*h1 {
-  text-align: center;
-  margin: 1em 0;
-  font-family: sans-serif;
-}*/
+/* o bendito carrossel */
 
 .carrosel {
   position: relative;
@@ -248,7 +242,7 @@ dialog button {
   width: 40px;
   color: #fff;
   transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 0%, blue 200%);
+  background: linear-gradient(to left, transparent 0%, blue 350%);
   opacity: 0.1;
   cursor: pointer;
   border: none;
@@ -259,7 +253,7 @@ dialog button {
   position: absolute;
   left: auto;
   right: 0;
-  background: linear-gradient(to right, transparent 0%, blue 200%);
+  background: linear-gradient(to right, transparent 0%, blue 350%);
 }
 
 .arrow-left:hover,
@@ -283,10 +277,9 @@ dialog button {
 }
 
 #gallery1 {
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
   display: flex;
 }
-
 
 #gallery2 {
   display: flex;
@@ -415,6 +408,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
 
 .textoPost p {
   margin-left: 10px;
+}
+
+/*RESPONSIVIDADE*/
+
+#primeiro {
+  background-color: #fff;
+  /* border: hidden; */
 }
 
 /*RESPONSIVIDADE*/

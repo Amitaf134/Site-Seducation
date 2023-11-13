@@ -62,7 +62,7 @@
         <!-- um elemento que irá se mover dentro do wrapper -->
         <div class="gallery" id="gallery1">
 
-          <button onClick="abrirArtigo()"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item"> </button>
+          <button onClick="abrirArtigo()" id="primeiro"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item" > </button>
           <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
         </div>
         <div class="gallery" id="gallery2">
