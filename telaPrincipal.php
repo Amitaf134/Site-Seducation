@@ -23,8 +23,6 @@ include('conexao.php');
 
   <!--JavaScript-->
   <script type="text/javascript" src="js/PgInicial.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
-  <script type="text/javascript" src="js/cadastro.js"></script>
   <script type="text/javascript" src="js/postagem.js"></script>
   <meta charset="utf-8">
 </head>

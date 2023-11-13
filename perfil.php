@@ -5,17 +5,6 @@ include('conexao.php');
 $bancoDados = new db();
 $link = $bancoDados->conecta_mysql();
 
-$nome = $_POST['nomeN'];
-$email = $_POST['emailN'];
-$biografia = $_POST['bioN'];
-
-$cod = $_SESSION['codigo'];
-$sqlUpdate = "UPDATE `usuario` SET `nome`='$nome', `email`='$email', `biografia`='$biografia' WHERE `codigo`='$cod'";
-$statement = $link->prepare($sqlUpdate);
-$statement->execute();
-
-$result = $statement->fetch(PDO::FETCH_ASSOC);
-header('Location: perfil.php');
 ?>
 <html>
 

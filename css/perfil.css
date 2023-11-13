@@ -3,6 +3,7 @@
   position: absolute;
   right: 95px;
   margin-top: 30px;
+  border-radius: 50%;
 }
 
 :root {
