@@ -24,7 +24,7 @@ if ($total > 0) {
 <head>
   <title> <?php echo $_SESSION['titulo'] ?> </title>
   <link href="img/logos.png" rel="icon">
-  <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/artigo.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,7 +37,6 @@ if ($total > 0) {
 <body>
 
   <h2> <?php echo $_SESSION['titulo'] ?> </h2>
-  <br>
   <h4> <?php echo $_SESSION['resumo'] ?> </h4>
   <a href="<?php echo $_SESSION['link'] ?>"> Leia mais </a>
 
