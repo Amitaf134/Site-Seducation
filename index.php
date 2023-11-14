@@ -9,8 +9,8 @@ include('conexao.php');
   include("cabecalho.php");
   ?>
 
-  <section class="container">
-    <h2> Assuntos em Alta </h2>
+  <section class="conteiner">
+  <h2> Assuntos em Alta </h2>
     <!--emi-->
     <div class="carrosel">
       <button class="arrow-left control" id="esquerda" aria-label="Previous image"> ◀ </button>
@@ -41,6 +41,8 @@ include('conexao.php');
     <!--emi-->
     
   </section>
+  <!-- <button class="curtida" type="button">Oi</button>
+        <img id="like" src="img/curtir.png"> -->
 
   <section class="conteinerPost">
     <h2>Postagens</h2>
@@ -66,13 +68,16 @@ include('conexao.php');
         $imagem = $user['caminho'];
 
       ?>
+
         <li class="post">
           <img src="<?php echo $imagem; ?>" id="imgPost">
           <h4><?php echo $nome; ?></h4>
           <div class="textoPost">
             <p><?php echo $texto; ?></p>
             <div>
+           
         </li>
+      
       <?php
 
       }
