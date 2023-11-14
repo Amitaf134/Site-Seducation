@@ -79,10 +79,7 @@ include('conexao.php');
         </li>
 
       <?php
-
       }
-
-
       ?>
     </ul>
 
