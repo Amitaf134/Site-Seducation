@@ -101,19 +101,15 @@ header {
 
 }
 
-/*
-.menu ul li:hover {
-  border-bottom: 3px solid #295CCB;
-  border-style: 58%;
-  padding: 5px;
 
-}
-*/
+
 .selecionado {
   border-bottom: 3px solid #295CCB;
   border-style: 58%;
-  padding: 5px
+  padding: 5px;
+  
 }
+
 
 /* seções*/
 /*.conteiner {
@@ -191,6 +187,16 @@ dialog label {
 
 dialog button {
   margin-top: 10px;
+}
+
+.telaCadastro{
+  width: 600px;
+  height: 600px;
+}
+
+.telaLogin button{
+  margin-top: 20px;
+  
 }
 
 .perfiheader {
@@ -297,6 +303,7 @@ dialog button {
 .current-item:hover {
   opacity: 1;
 }
+
 
 
 /* This is from w3schools 

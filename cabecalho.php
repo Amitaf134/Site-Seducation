@@ -41,10 +41,10 @@
   </header>
   <nav class=" menu">
     <ul>
-      <li><a href="index.php">Início</a></li>
-      <li><a href="artigo.php">Artigos</a></li>
-      <li><a href="inform.php">Informações</a></li>
-      <li><a href="sobrenos.php">Sobre nós</a></li>
+      <li id="inicio"><a href="index.php" >Início</a></li>
+      <li id="artigo"><a href="artigo.php" >Artigos</a></li>
+      <li id="inform"><a href="inform.php" >Informações</a></li>
+      <li id="sobre"><a href="sobrenos.php">Sobre nós</a></li>
     </ul>
   </nav>
 </body>

@@ -85,7 +85,7 @@ include('conexao.php');
   </section>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
+  <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
   </footer>
 
 </body>

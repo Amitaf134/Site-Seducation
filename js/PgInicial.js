@@ -32,12 +32,11 @@ var div1 = document.getElementById('gallery2').style.display;
  btEsquerda.addEventListener('click',function(){
   document.getElementById('gallery1').style.display = 'flex';
   document.getElementById('gallery2').style.display = 'none';
-  console.log("oi");
  });
  
  btDireita.addEventListener('click',function(e){
   document.getElementById('gallery1').style.display= 'none';
   document.getElementById('gallery2').style.display = 'flex';
-  console.log("olá");
 
  });
+

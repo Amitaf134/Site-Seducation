@@ -36,7 +36,7 @@
     </form>
   </dialog>
 
-  <dialog class="telaCadastro" id="cadastro">
+  <dialog class="telaCadastro" id="cadastro" style="height:450px;">
     <button id="sair" type="button" onclick="Csair()" class="btSair">X</button>
 
     <h2>Cadastrar</h2>
@@ -56,7 +56,7 @@
       <label for="foto">Foto</label>
       <input type="file" name="pic" accept="image/*">
       <br>
-      <input id="cadastrar" name="cadastrar" type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 350px;">
+      <input id="cadastrar" name="cadastrar" type="submit" class="inputSubmit" value="Cadastrar" style="position: absolute; left: 164px; top: 400px;">
     </form>
   </dialog>
 </body>

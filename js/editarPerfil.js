@@ -2,6 +2,6 @@ function editar() {
   var editar = document.getElementById("editar").showModal();
 }
 
-function sair() {
+function sairE() {
   var btSair = document.getElementById("editar").close();
 }

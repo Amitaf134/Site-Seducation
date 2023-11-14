@@ -31,7 +31,7 @@ $link = $bancoDados->conecta_mysql();
     <div class="imgPerfil">
       <a onclick="editar()" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" width="150px" height="150px"></a>
       <h3> <?php echo $_SESSION['nomeUser'] ?> </h3>
-      <p><?php echo $_SESSION['biografia'] ?></p>
+      <p><?php echo $_SESSION['biografia']; ?></p>
     </div>
   </header>
 
@@ -43,29 +43,11 @@ $link = $bancoDados->conecta_mysql();
   </nav>
 
   <footer>
-    <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
+     <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
   </footer>
   <?php
   include('postagens.php');
   ?>
-  <!-- popup de editar o perfil -->
-  <dialog class="telaEditar" id="editar">
-    <button id="sair" type="button" onclick="sair()" class="btSair">X</button>
-    <h3> Editar Perfil </h3>
-    <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
-    <form method="POST" action="verificaUsuario.php">
-      <label for="lnome" id="lnome"> Nome: </label>
-      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser']; ?>">
-      <br>
-
-      <label for="lemail" id="lemail"> Email: </label>
-      <input type="email" name="emailN" id="emailN" value="<?php echo $_SESSION['email'] ?>">
-      <br>
-      <label for="bio" id="bio"> Biografia: </label>
-      <input type="text" id="bioN">
-      <br>
-      <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar">
-    </form>
   </dialog>
 
   <section class="conteinerPost">
@@ -104,6 +86,28 @@ $link = $bancoDados->conecta_mysql();
     </ul>
 
   </section>
+
+
+
+    <!-- popup de editar o perfil -->
+    <dialog class="telaEditar" id="editar">
+    <button id="sair" type="button" onclick="sairE()" class="btSair">X</button>
+    <h3> Editar Perfil </h3>
+    <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
+    <form method="POST" action="verificaUsuario.php">
+      <label for="lnome" id="lnome"> Nome: </label>
+      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser']; ?>">
+      <br>
+      <label for="lemail" id="lemail"> Email: </label>
+      <input type="email" name="emailN" id="emailN" value="<?php echo $_SESSION['email'] ?>">
+      <br>
+      <label for="bio" id="bio"> Biografia: </label>
+      <input type="text" id="bioN">
+      <br>
+      <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar">
+    </form>
 </body>
+
+
 
 </html>

@@ -6,7 +6,7 @@
 <body>
 
 <h3> Adicione as informações para o artigo: </h3>
-<form method="POST">
+<form method="POST" >
 <label for="titulo"> Título: </label>
     <input type= "text" id="titulo" name="titulo">
     <br> <br>
