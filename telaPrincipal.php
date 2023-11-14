@@ -37,9 +37,9 @@ include('conexao.php');
       <button id="btPesq" type="submit" onclick="barraPesq()"></button>
     </div>
     <!-- foto de perfil -->
-    <a href="perfil.php" class="fotinha"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
+    <a href="perfil.php" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
   </header>
-  <nav class=" menu">
+  <nav class="menu">
     <ul>
       <li><a href="index.php">Início</a></li>
       <li><a href="artigo.php">Artigos</a></li>
