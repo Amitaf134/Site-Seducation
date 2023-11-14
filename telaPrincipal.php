@@ -1,5 +1,6 @@
 <?php
 session_start();
+include('conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -9,6 +10,7 @@ session_start();
   <title>Seducation</title>
   <link href="img/logos.png" rel="icon">
   <link href="css/estilo.css" rel="stylesheet">
+  <link href="css/perfil.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,8 +23,7 @@ session_start();
 
   <!--JavaScript-->
   <script type="text/javascript" src="js/PgInicial.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
-  <script type="text/javascript" src="js/cadastro.js"></script>
+  <script type="text/javascript" src="js/postagem.js"></script>
   <meta charset="utf-8">
 </head>
 
@@ -35,9 +36,8 @@ session_start();
       <input type="text" id="brPesq" placeholder="Pesquisar..." onmouseenter="mostrarB()">
       <button id="btPesq" type="submit" onclick="barraPesq()"></button>
     </div>
-
-    <!-- botões de login e cadastro-->
-      <a href="perfil.php" class="fotoPerfil"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
+    <!-- foto de perfil -->
+    <a href="perfil.php" class="fotinha"><img src="<?php echo $_SESSION['caminhoImg'] ?>" id="logo"></a>
   </header>
   <nav class=" menu">
     <ul>
@@ -48,8 +48,44 @@ session_start();
     </ul>
   </nav>
 
+  <section class="conteinerPost">
+    <h2>Postagens</h2>
+    <ul class="Ipostagens">
+      <?php
+      $bancoDados = new db();
+      $link = $bancoDados->conecta_mysql();
+
+      $sql = "SELECT * FROM postagem;";
+      $statement = $link->prepare($sql);
+      $statement->execute();
+
+      while ($result = $statement->fetch(PDO::FETCH_ASSOC)) {
+        $id_usuer = $result['id_usuario'];
+        $texto = $result['texto'];
+
+        $sql = "SELECT `nome`,`caminho` FROM usuario WHERE `codigo` = '$id_usuer';";
+        $pegar = $link->prepare($sql);
+        $pegar->execute();
+        $user = $pegar->fetch(PDO::FETCH_ASSOC);
+
+        $nome = $user['nome'];
+        $imagem = $user['caminho'];
+      ?>
+        <li class="post">
+          <img src="<?php echo $imagem; ?>" id="imgPost">
+          <h4><?php echo $nome; ?></h4>
+          <div class="textoPost">
+            <p><?php echo $texto; ?></p>
+            <div>
+        </li>
+      <?php
+      }
+      ?>
+    </ul>
+  </section>
+
   <footer>
-    <button id="btPublicar" class="btPubli" type="button"><a href="postagens.php">+</a></button>
+    <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
   </footer>
 
 </body>

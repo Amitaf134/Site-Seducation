@@ -11,9 +11,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&display=swap" rel="stylesheet">
 
   <!--JavaScript-->
-  <script type="text/javascript" src="../js/PagInicial.js"></script>
-  <script type="text/javascript" src="../js/login.js"></script>
-  <script type="text/javascript" src="../js/cadastro.js"></script>
+  <script type="text/javascript" src="js/PagInicial.js"></script>
+  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/cadastro.js"></script>
+  <script type="text/javascript" src="js/artigo.js"></script>
   <meta charset="utf-8">
 </head>
 
@@ -23,25 +24,56 @@
   include("cabecalho.php");
   ?>
 
-  <section class="conteiner">
-    <h2> GRAVIDEZ NA ADOLESCÊNCIA </h2>
+<section class="container">
+    <h2> Gravidez na Adolescência </h2>
+    <!--emi-->
+    <div class="carrosel">
+      <button class="arrow-left control" id="esquerda" aria-label="Previous image"> ◀ </button>
+      <button class="arrow-right control" id="direita" aria-label="Next Image"> ▶ </button>
 
-    <img src="img/artigosete.png" alt="Artigo 1" id="img-um" width="340px" height="320px" border-radius="55%" 
-    style="border-radius: 15px; margin-left: 20px;" />
+      <!-- overflow cm largura fixa -->
+      <div class="gallery-wrapper" id="gallery-wrapper">
+        <!-- um elemento que irá se mover dentro do wrapper -->
+        <div class="gallery" id="gallery1">
 
-    <img src="img/artigooito.png" alt="Artigo 2" id="img-um" width="340px" height="320px" border-radius="55%" 
-    style="border-radius: 15px; margin-left: 340px;" />
+          <img src="img/artigodez.png" alt="Artigo Dez" class="item current-item">
+          <img src="img/artigocinco.png" alt="Artigo Cinco" class="item current-item">
+          <img src="img/artigotres.png" alt="Artigo Tres" class="item current-item">
+        </div>
+        <div class="gallery" id="gallery2">
 
-    <img src="img/artigonove.png" alt="Artigo 3" id="img-um" width="340px" height="320px" border-radius="55%" 
-    style="border-radius: 15px; margin-left: 662px;" />
+          <img src="img/artigosete.png" alt="Artigo Onze" class="item current-item">
+          <img src="img/artigooito.png" alt="Artigo Tres" class="item current-item">
+        </div>
 
-    <img src="img/artigodez.png" alt="Artigo 4" id="img-um" width="340px" height="320px" border-radius="55%" 
-    style="border-radius: 15px; margin-left: 980px;" />
-
+      </div>
+    </div>
+    <!--emi-->
   </section>
 
   <section class="conteiner">
-    <h2> MÉTODOS CONTRACEPTIVOS </h2>
+    <h2> Identidade de Gênero e Autoestima </h2>
+    <div class="carrosel">
+      <button class="arrow-left control" id="esquerda" aria-label="Previous image"> ◀ </button>
+      <button class="arrow-right control" id="direita" aria-label="Next Image"> ▶ </button>
+
+      <!-- overflow cm largura fixa -->
+      <div class="gallery-wrapper" id="gallery-wrapper">
+        <!-- um elemento que irá se mover dentro do wrapper -->
+        <div class="gallery" id="gallery1">
+
+          <button onClick="abrirArtigo()" id="primeiro"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item" > </button>
+          <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
+        </div>
+        <div class="gallery" id="gallery2">
+
+          <img src="img/artigoum.png" alt="Artigo Um" class="item current-item">
+          <img src="img/artigodois.png" alt="Artigo Dez" class="item current-item">
+          <img src="img/artigoseis.png" alt="Artigo Cinco" class="item current-item">
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!--login e cadastro-->
