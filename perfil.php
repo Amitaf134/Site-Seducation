@@ -94,18 +94,34 @@ $link = $bancoDados->conecta_mysql();
     <button id="sair" type="button" onclick="sairE()" class="btSair">X</button>
     <h3> Editar Perfil </h3>
     <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
-    <form method="POST" action="verificaUsuario.php">
+    <form method="POST" action="perfil.php">
       <label for="lnome" id="lnome"> Nome: </label>
-      <input type="text" id="nomeN" value="<?php echo $_SESSION['nomeUser']; ?>">
-      <br>
-      <label for="lemail" id="lemail"> Email: </label>
-      <input type="email" name="emailN" id="emailN" value="<?php echo $_SESSION['email'] ?>">
+      <input type="text" id="lnome"  name="nomeN" value="<?php echo $_SESSION['nomeUser']; ?>">
       <br>
       <label for="bio" id="bio"> Biografia: </label>
-      <input type="text" id="bioN">
+      <input type="text" id="bio" name="bioN" value="<?php echo $_SESSION['biografia'] ?>">
       <br>
       <input id="salvar" name="salvar" type="submit" class="inputSubmit" value="Salvar">
     </form>
+
+
+    <?php
+
+    if(isset($_POST['salvar'])){
+      $email = $_SESSION['email'];
+      $nomeN = $_POST['nomeN'];
+      $bioN = $_POST['bioN'];
+
+      $sql = "UPDATE `usuario` SET `nome`='$nomeN', `biografia`='bioN' WHERE `email`='$email'";
+      $statement = $link->prepare($sql);
+      $statement->execute();
+  
+      $_SESSION['nomeUser'] = $nomeN ;
+      $_SESSION['biografia'] = $bioN;
+
+      header('Location: perfil.php');
+    }
+    ?>
 </body>
 
 
