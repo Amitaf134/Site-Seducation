@@ -87,10 +87,7 @@ $link = $bancoDados->conecta_mysql();
 
   </section>
 
-
-
-    <!-- popup de editar o perfil -->
-    <dialog class="telaEditar" id="editar">
+  <dialog class="telaEditar" id="editar">
     <button id="sair" type="button" onclick="sairE()" class="btSair">X</button>
     <h3> Editar Perfil </h3>
     <img src="<?php echo $_SESSION['caminhoImg'] ?>" id="editarPerfilFoto">
@@ -112,7 +109,7 @@ $link = $bancoDados->conecta_mysql();
       $nomeN = $_POST['nomeN'];
       $bioN = $_POST['bioN'];
 
-      $sql = "UPDATE `usuario` SET `nome`='$nomeN', `biografia`='bioN' WHERE `email`='$email'";
+      $sql = "UPDATE `usuario` SET `nome`='$nomeN', `biografia`='$bioN' WHERE `email`='$email'";
       $statement = $link->prepare($sql);
       $statement->execute();
   
@@ -122,6 +119,8 @@ $link = $bancoDados->conecta_mysql();
       header('Location: perfil.php');
     }
     ?>
+</body>
+
 </body>
 
 
