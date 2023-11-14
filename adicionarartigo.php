@@ -41,11 +41,11 @@ if ($total > 0) {
 <?php
    include('cabecalho.php');
 ?>
-
+   <section class="containerArtigo">
   <h2> <?php echo $_SESSION['titulo'] ?> </h2>
   <h4> <?php echo $_SESSION['resumo'] ?> </h4>
-  <a href="<?php echo $_SESSION['link'] ?>"> Leia mais </a>
-
+  <a id="link" target="" href="<?php echo $_SESSION['link']?>" class="inputSubmit"> Leia mais </a>
+</section>
 </body>
 
 </html>
