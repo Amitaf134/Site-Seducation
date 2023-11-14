@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.containerArtigo {
+  position: relative;
+  width: 90%;
+  left: 5%;
+  top: 30px;
+}
+
+h2 {
+  margin-left: 25px;
+  margin-top: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h4 {
+  margin-left: 15px;
+  margin-top: 50px;
+  font-size: 1.5rem;
+  font-family: 'Jaldi', Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+#link {
+  position: relative;
+  text-decoration: none;
+  left: 1000px;
+}
