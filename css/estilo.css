@@ -320,6 +320,8 @@ dialog button {
 
 }
 
+/* título POSTAGENS */
+
 .conteinerPost h2 {
   margin-left: 40px;
   margin-top: 20px;
@@ -354,7 +356,7 @@ dialog button {
   position: absolute;
   background-size: cover;
   margin-left: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .Ipostagens .post h4 {
@@ -362,21 +364,22 @@ dialog button {
   font-size: 1em;
   position: absolute;
   margin-left: 80px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .Ipostagens .post .textoPost {
   width: 500px;
   height: 200px;
-  background-color: #4e93d8;
+  background-color: #ffffff;
   position: absolute;
-  margin-top: 60px;
+  margin-top: 80px;
   margin-left: 60px;
   border-radius: 15px;
 }
 
 .textoPost p {
-  margin-left: 10px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 /* .curtida{
@@ -599,7 +602,7 @@ dialog button {
   .Ipostagens .post .textoPost {
     width: 500px;
     height: 200px;
-    background-color: #4e93d8;
+    background-color: #ffffff;
     position: relative;
     margin-top: 80px;
     margin-left: 20px;
@@ -608,7 +611,7 @@ dialog button {
   }
 
   .textoPost p {
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
   }
 }
