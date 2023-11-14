@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once('conexao.php');
 $bancoDados = new db();
 $link = $bancoDados->conecta_mysql();
@@ -25,6 +26,7 @@ if ($total > 0) {
   <title> <?php echo $_SESSION['titulo'] ?> </title>
   <link href="img/logos.png" rel="icon">
   <link href="css/artigo.css" rel="stylesheet">
+  <link href="css/estilo.css" rel="stylesheet">
 
   <!--fontes-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +37,10 @@ if ($total > 0) {
 </head>
 
 <body>
+
+<?php
+   include('cabecalho.php');
+?>
 
   <h2> <?php echo $_SESSION['titulo'] ?> </h2>
   <h4> <?php echo $_SESSION['resumo'] ?> </h4>
