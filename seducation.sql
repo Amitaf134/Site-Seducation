@@ -2,9 +2,9 @@
 
 CREATE TABLE artigo (
   codigo int NOT NULL primary key auto_increment,
-  titulo text NOT NULL,
+  titulo text NOT NULL unique,
   link text NOT NULL unique,
-  foto blob NOT NULL,
+  foto blob,
   resumo text NOT NULL
 )
 

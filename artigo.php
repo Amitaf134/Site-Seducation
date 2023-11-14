@@ -14,7 +14,6 @@
   <script type="text/javascript" src="js/PagInicial.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
   <script type="text/javascript" src="js/cadastro.js"></script>
-  <script type="text/javascript" src="js/artigo.js"></script>
   <meta charset="utf-8">
 </head>
 
@@ -24,7 +23,7 @@
   include("cabecalho.php");
   ?>
 
-<section class="container">
+  <section class="container">
     <h2> Gravidez na Adolescência </h2>
     <!--emi-->
     <div class="carrosel">
@@ -62,8 +61,8 @@
         <!-- um elemento que irá se mover dentro do wrapper -->
         <div class="gallery" id="gallery1">
 
-          <button onClick="abrirArtigo()" id="primeiro"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item" > </button>
-          <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
+          <a href="adicionarartigo.php"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item" value="<?php $_SESSION['titulo'] ?>"> </a>
+          <a href="adicionarartigo.php"> <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item"> </a>
         </div>
         <div class="gallery" id="gallery2">
 

@@ -10,7 +10,7 @@ include('conexao.php');
   ?>
 
   <section class="conteiner">
-  <h2> Assuntos em Alta </h2>
+    <h2> Assuntos em Alta </h2>
     <!--emi-->
     <div class="carrosel">
       <button class="arrow-left control" id="esquerda" aria-label="Previous image"> ◀ </button>
@@ -21,7 +21,7 @@ include('conexao.php');
         <!-- um elemento que irá se mover dentro do wrapper -->
         <div class="gallery" id="gallery1">
 
-          <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item">
+          <a href="adicionarartigo.php"> <img src="img/artigoquatro.png" alt="Artigo Um" class="item current-item"> </a>
           <img src="img/artigodez.png" alt="Artigo Dez" class="item current-item">
           <img src="img/artigocinco.png" alt="Artigo Cinco" class="item current-item">
           <img src="img/artigoonze.png" alt="Artigo Onze" class="item current-item">
@@ -39,7 +39,7 @@ include('conexao.php');
       </div>
     </div>
     <!--emi-->
-    
+
   </section>
   <!-- <button class="curtida" type="button">Oi</button>
         <img id="like" src="img/curtir.png"> -->
@@ -75,9 +75,9 @@ include('conexao.php');
           <div class="textoPost">
             <p><?php echo $texto; ?></p>
             <div>
-           
+
         </li>
-      
+
       <?php
 
       }
