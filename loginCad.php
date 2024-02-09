@@ -36,7 +36,7 @@
     </form>
   </dialog>
 
-  <dialog class="telaCadastro" id="cadastro" style="height:450px;">
+  <dialog class="telaCadastro" id="cadastro" style="width:400px; he ight:450px;">
     <button id="sair" type="button" onclick="Csair()" class="btSair">X</button>
 
     <h2>Cadastrar</h2>

@@ -34,7 +34,7 @@
 
     <!-- botões de login e cadastro-->
     <div class="bts">
-      <button class="inputSubmit" id="btLogin" type="button" onclick="logar()">Login</button>
+    <button class="inputSubmit" id="btLogin" type="button" onclick="logar()">Login</button>
       <button class="inputSubmit" id="btCadastro" type="button" onclick="cadastrar()">Cadastrar</button>
     </div>
 
