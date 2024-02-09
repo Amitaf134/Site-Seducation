@@ -71,7 +71,9 @@ $link = $bancoDados->conecta_mysql();
 
         $nome = $user['nome'];
         $imagem = $user['caminho'];
+     if($_SESSION['nomeUser'] == $nome){
 
+     
       ?>
         <li class="post">
           <img src="<?php echo $imagem; ?>" id="imgPost">
@@ -81,6 +83,7 @@ $link = $bancoDados->conecta_mysql();
             <div>
         </li>
       <?php
+     }
       }
       ?>
     </ul>

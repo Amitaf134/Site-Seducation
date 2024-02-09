@@ -51,7 +51,7 @@ include('conexao.php');
       $bancoDados = new db();
       $link = $bancoDados->conecta_mysql();
 
-      $sql = "SELECT * FROM postagem;";
+      $sql = "SELECT * FROM postagem ORDER BY id_postagem DESC;";
       $statement = $link->prepare($sql);
       $statement->execute();
 
@@ -63,10 +63,13 @@ include('conexao.php');
         $pegar = $link->prepare($sql);
         $pegar->execute();
         $user = $pegar->fetch(PDO::FETCH_ASSOC);
+        
 
         $nome = $user['nome'];
         $imagem = $user['caminho'];
-
+ 
+       
+          
       ?>
 
         <li class="post">
@@ -74,12 +77,14 @@ include('conexao.php');
           <h4><?php echo $nome; ?></h4>
           <div class="textoPost">
             <p><?php echo $texto; ?></p>
-            <div>
-           
+          </div>
+          <div class="curtida">
+              <button  onclick="curtir()"><img src="img/curtir.png" id="like"></button>
+          </div>
         </li>
       
       <?php
-
+        
       }
 
 

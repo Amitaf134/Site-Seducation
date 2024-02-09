@@ -41,7 +41,7 @@
   </header>
   <nav class=" menu">
     <ul>
-      <li id="inicio"><a href="index.php" >Início</a></li>
+      <li id="inicio" class="selecionado"><a href="index.php" >Início</a></li>
       <li id="artigo"><a href="artigo.php" >Artigos</a></li>
       <li id="inform"><a href="inform.php" >Informações</a></li>
       <li id="sobre"><a href="sobrenos.php">Sobre nós</a></li>

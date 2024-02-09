@@ -23,6 +23,21 @@ function mostrarB(){
 }
 
 
+var soma = 0;
+
+function curtir(){
+  var btLIke = document.getElementById('like').src;
+  soma = soma + 1;
+  if(soma % 2 == 0){
+    btLIke = document.getElementById('like').src = 'img/curtido.png';
+ }else{
+  btLIke = document.getElementById('like').src = 'img/curtir.png';
+ }
+  
+}
+
+
+
 var btEsquerda = document.getElementById('esquerda');
 var btDireita = document.getElementById('direita');
 
@@ -39,4 +54,3 @@ var div1 = document.getElementById('gallery2').style.display;
   document.getElementById('gallery2').style.display = 'flex';
 
  });
-

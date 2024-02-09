@@ -101,14 +101,14 @@ header {
 
 }
 
-
-
 .selecionado {
   border-bottom: 3px solid #295CCB;
   border-style: 58%;
+  border-end-end-radius: 50%;
   padding: 5px;
   
 }
+
 
 
 /* seções*/
@@ -417,18 +417,20 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp
   margin-left: 10px;
 }
 
-/* .curtida{
- width: 50px;
- height:50px;
- background-color: red;
+.Ipostagens .post .curtida{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  margin-top: 265px;
+  background-color: transparent;
 }
 
 #like{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-} */
-/*RESPONSIVIDADE*/
+  width: 25px;
+  height: 25px;
+}
+
 
 #primeiro {
   background-color: #fff;

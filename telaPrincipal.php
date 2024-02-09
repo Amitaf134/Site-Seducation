@@ -55,7 +55,7 @@ include('conexao.php');
       $bancoDados = new db();
       $link = $bancoDados->conecta_mysql();
 
-      $sql = "SELECT * FROM postagem;";
+      $sql = "SELECT * FROM postagem ORDER BY id_postagem DESC;";
       $statement = $link->prepare($sql);
       $statement->execute();
 
@@ -85,8 +85,9 @@ include('conexao.php');
   </section>
 
   <footer>
-  <button id="btPublicar" class="btPubli" type="button" onclick="postagem()"> + </button>
+  <button id="btPublicar" class="btPubli" type="button" onclick="postagem()">+</button>
   </footer>
+  <?php  include('postagens.php');?>
 
 </body>
 
